@@ -1,0 +1,6 @@
+/*
+CSS Module for Nav component
+*/
+.nav {
+  font-family: var(--font-caprasimo), cursive;
+}
