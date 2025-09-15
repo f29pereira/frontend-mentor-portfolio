@@ -1,6 +1,7 @@
 import type { CardProps } from "@/app/types";
 import Image from "next/image";
-import LinkButton from "../LinkButton/LinkButton";
+import LinkButton from "../../LinkButton/LinkButton";
+import Technology from "../../Technology/Technology";
 
 /**
  * Renders a card component with:
@@ -13,8 +14,9 @@ import LinkButton from "../LinkButton/LinkButton";
 export default function Card({
   imageSrc,
   imageAlt,
-  title,
-  desctiption,
+  cardTitle,
+  technologies,
+  cardDescription,
   demoLink,
   codeLink,
 }: CardProps) {
@@ -23,14 +25,30 @@ export default function Card({
       className="flex flex-col items-center overflow-hidden bg-white border-2 border-stone-300 rounded-lg w-80 h-130 
       md:w-100 md:h-150"
     >
-      <div className="relative w-full flex-[2]">
+      {/*Card Image*/}
+      <div className="relative w-full flex-[1]">
         <Image src={imageSrc} alt={imageAlt} fill className="object-cover" />
       </div>
-      <div className="flex-[1] flex flex-col items-center p-4">
-        <header className="mb-4">
-          <h2 className="text-lg font-bold md:text-xl lg:mb-8">{title}</h2>
+      <div className="h-[18.75rem] flex flex-col items-center p-4">
+        <header className="mb-8">
+          {/*Card Title*/}
+          <h2 className="text-xl font-bold md:text-xl lg:text-2xl">
+            {cardTitle}
+          </h2>
         </header>
-        <p className="text-center text-sm mb-6 lg:mb-10">{desctiption}</p>
+
+        {/*Technologies list*/}
+        <div className="flex flex-wrap gap-2 mb-4">
+          {technologies.map((tech, index) => (
+            <div key={index}>
+              <Technology name={tech} />
+            </div>
+          ))}
+        </div>
+
+        <p className="text-center h-12 mb-12 lg:text-lg">{cardDescription}</p>
+
+        {/*Card Buttons*/}
         <div className="flex gap-8">
           <LinkButton link={demoLink} description="Live Demo" />
           <LinkButton link={codeLink} description="View Code" />
