@@ -7,7 +7,7 @@ export default function Home() {
       <div className="flex justify-center">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 xl:grid-cols-3 xl:gap-8">
           <Card
-            imageSrc="/images/fylo_landing_page.png"
+            imageSrc="images/fylo_landing_page.png"
             imageAlt="Fylo Landing Page Challenge"
             title="Fylo landing page"
             desctiption="Built with: Next.js, React, TypeScript, HTML and CSS"
@@ -15,7 +15,7 @@ export default function Home() {
             codeLink="https://github.com/f29pereira/fylo"
           />
           <Card
-            imageSrc="/images/bento_grid.png"
+            imageSrc="images/bento_grid.png"
             imageAlt="Bento Grid Challenge"
             title="Bento Grid"
             desctiption="Built with: Next.js, React, TypeScript, HTML and CSS"
@@ -23,7 +23,7 @@ export default function Home() {
             codeLink="https://github.com/f29pereira/bento-grid"
           />
           <Card
-            imageSrc="/images/order_summary.png"
+            imageSrc="images/order_summary.png"
             imageAlt="Order Summary Challenge"
             title="Order Summary"
             desctiption="Built with: Next.js, React, TypeScript, HTML and CSS"
