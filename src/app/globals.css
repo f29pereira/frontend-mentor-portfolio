@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+:root {
+  /*Technologies colors*/
+  --color-nextjs: #000000;
+  --color-react: #61dafb;
+  --color-typescript: #3178c6;
+  --color-html: #e34f26;
+  --color-css: #1572b6;
+}
+
 body {
   font-family: var(--font-inter), sans-serif;
 }

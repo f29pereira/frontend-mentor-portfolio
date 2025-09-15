@@ -1,4 +1,9 @@
 /**
+ * Union of valid technology names
+ */
+export type TechnologyName = "nextjs" | "react" | "typescript" | "html" | "css";
+
+/**
  * Props for the Card component
  */
 export type CardProps = {
@@ -9,16 +14,26 @@ export type CardProps = {
   imageAlt: string;
 
   //Title of the card
-  title: string;
+  cardTitle: string;
 
   //Description of the card
-  desctiption: string;
+  cardDescription: string;
+
+  //Technologies used
+  technologies: TechnologyName[];
 
   //Link URL for the "Live Demo"
   demoLink: string;
 
   //Link URL for the "View Code"
   codeLink: string;
+};
+
+/**
+ * Props for the CardList component
+ */
+export type CardListProps = {
+  cardList: CardProps[];
 };
 
 /**
@@ -29,4 +44,12 @@ export type LinkButtonProps = {
   link: string;
   //Link description
   description: string;
+};
+
+/**
+ * Props for the Technology component
+ */
+export type TechnologyProps = {
+  //Technology name
+  name: TechnologyName;
 };
