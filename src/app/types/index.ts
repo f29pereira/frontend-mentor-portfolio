@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 /**
  * Union of valid technology names
  */
@@ -43,7 +45,7 @@ export type LinkButtonProps = {
   //Link URL
   link: string;
   //Link description
-  description: string;
+  description: ReactNode;
 };
 
 /**

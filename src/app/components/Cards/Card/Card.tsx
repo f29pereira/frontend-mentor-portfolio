@@ -2,6 +2,7 @@ import type { CardProps } from "@/app/types";
 import Image from "next/image";
 import LinkButton from "../../LinkButton/LinkButton";
 import Technology from "../../Technology/Technology";
+import { FiExternalLink, FaGithub } from "@/app/utils/icons";
 
 /**
  * Renders a card component with:
@@ -37,8 +38,10 @@ export default function Card({
           </h2>
         </header>
 
+        <p className="text-center h-12 mb-8 lg:text-lg">{cardDescription}</p>
+
         {/*Technologies list*/}
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-4 mb-12">
           {technologies.map((tech, index) => (
             <div key={index}>
               <Technology name={tech} />
@@ -46,12 +49,26 @@ export default function Card({
           ))}
         </div>
 
-        <p className="text-center h-12 mb-12 lg:text-lg">{cardDescription}</p>
-
         {/*Card Buttons*/}
         <div className="flex gap-8">
-          <LinkButton link={demoLink} description="Live Demo" />
-          <LinkButton link={codeLink} description="View Code" />
+          <LinkButton
+            link={demoLink}
+            description={
+              <>
+                <FiExternalLink className="text-xl" />
+                <span className="font-bold">Demo</span>
+              </>
+            }
+          />
+          <LinkButton
+            link={codeLink}
+            description={
+              <>
+                <FaGithub className="text-xl" />
+                <span className="font-bold">Repo</span>
+              </>
+            }
+          />
         </div>
       </div>
     </div>

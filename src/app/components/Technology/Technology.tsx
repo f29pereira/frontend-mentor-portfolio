@@ -1,4 +1,12 @@
 import type { TechnologyProps } from "@/app/types";
+import {
+  RiNextjsFill,
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  SiTypescript,
+} from "@/app/utils/icons";
+import { ReactNode } from "react";
 
 /**
  * Renders technology name with associated color
@@ -7,9 +15,29 @@ import type { TechnologyProps } from "@/app/types";
  */
 export default function Technology({ name }: TechnologyProps) {
   /**
-   * Formats the technology name
+   * Sets technology icon
    */
-  const formatName = (techName: string) => {
+  const getIcon = (techName: string): ReactNode => {
+    switch (techName) {
+      case "nextjs":
+        return <RiNextjsFill />;
+      case "react":
+        return <FaReact />;
+      case "typescript":
+        return <SiTypescript />;
+      case "html":
+        return <FaHtml5 />;
+      case "css":
+        return <FaCss3Alt />;
+      default:
+        return techName;
+    }
+  };
+
+  /**
+   * Formats technology name
+   */
+  const formatName = (techName: string): string => {
     switch (techName) {
       case "nextjs":
         return "NextJS";
@@ -29,7 +57,9 @@ export default function Technology({ name }: TechnologyProps) {
       className="font-extrabold text-sm"
       style={{ color: `var(--color-${name})` }}
     >
-      {formatName(name)}
+      <span className="text-3xl" title={formatName(name)}>
+        {getIcon(name)}
+      </span>
     </div>
   );
 }
