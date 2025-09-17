@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function LinkButton({ link, description }: LinkButtonProps) {
   return (
     <Link
-      className="bg-blue-600 py-3 px-6 rounded-xl text-sm hover:bg-blue-500 md:text-base "
+      className="bg-indigo-600 py-3 px-6 rounded-xl text-sm hover:bg-indigo-500 md:text-base "
       target="_blank"
       href={link}
     >

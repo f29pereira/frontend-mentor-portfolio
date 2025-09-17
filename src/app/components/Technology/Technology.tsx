@@ -57,7 +57,7 @@ export default function Technology({ name }: TechnologyProps) {
       className="font-extrabold text-sm"
       style={{ color: `var(--color-${name})` }}
     >
-      <span className="text-3xl" title={formatName(name)}>
+      <span className="text-3xl md:text-4xl" title={formatName(name)}>
         {getIcon(name)}
       </span>
     </div>

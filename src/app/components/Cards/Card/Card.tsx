@@ -23,14 +23,20 @@ export default function Card({
 }: CardProps) {
   return (
     <div
-      className="flex flex-col items-center overflow-hidden bg-white border-2 border-stone-300 rounded-lg w-80 h-130 
+      className="flex flex-col items-center overflow-hidden bg-white border-2 border-stone-300 
+      rounded-lg shadow-lg hover:shadow-xl duration-700 w-80 h-130 
       md:w-100 md:h-150"
     >
       {/*Card Image*/}
-      <div className="relative w-full flex-[1]">
-        <Image src={imageSrc} alt={imageAlt} fill className="object-cover" />
+      <div className="relative w-full flex-[1] overflow-hidden">
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          fill
+          className="object-cover hover:scale-105 duration-700"
+        />
       </div>
-      <div className="h-[18.75rem] flex flex-col items-center p-4">
+      <div className="h-[20rem] flex flex-col items-center p-4 overflow-hidden">
         <header className="mb-8">
           {/*Card Title*/}
           <h2 className="text-xl font-bold md:text-xl lg:text-2xl">
