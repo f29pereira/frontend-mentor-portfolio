@@ -19,7 +19,7 @@ export default function Home() {
       imageAlt: "Bento Grid Challenge",
       cardTitle: "Bento Grid",
       technologies: ["nextjs", "react", "html", "css"],
-      cardDescription: "Bento style grid layout",
+      cardDescription: "Bento style grid layout.",
       demoLink: "https://f29pereira.github.io/bento-grid/",
       codeLink: "https://github.com/f29pereira/bento-grid",
     },
@@ -29,17 +29,32 @@ export default function Home() {
       cardTitle: "Order Summary",
       technologies: ["nextjs", "react", "typescript", "html", "css"],
       cardDescription:
-        "Order summary card component for music subscription plan",
+        "Order summary card component for music subscription plan.",
       demoLink: "https://f29pereira.github.io/order-summary/",
       codeLink: "https://github.com/f29pereira/order-summary",
     },
   ];
 
   return (
-    <main className="mt-10 p-4 lg:mt-20">
+    <>
+      {/*Intro Section*/}
+      <section className="mb-4 lg:mb-10">
+        <p className="text-center text-lg lg:text-xl">
+          A collection of coding challenges I`ve completed from
+          <a
+            className="mx-2 underline text-blue-950 hover:text-cyan-500"
+            href="https://www.frontendmentor.io/home"
+            target="_blank"
+          >
+            Frontend Mentor
+          </a>
+        </p>
+      </section>
+
+      {/*Challenge Cards Section*/}
       <section className="flex justify-center">
         <CardList cardList={cardList} />
       </section>
-    </main>
+    </>
   );
 }
