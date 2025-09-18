@@ -23,7 +23,10 @@ export default function Footer() {
 
         {/*Account links*/}
         <div className="flex flex-row gap-12 text-4xl lg:gap-20">
-          <a href="https://www.frontendmentor.io/home" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/filipe-pereira-b757471b9"
+            target="_blank"
+          >
             <FaLinkedin />
           </a>
           <a href="https://github.com/f29pereira" target="_blank">
