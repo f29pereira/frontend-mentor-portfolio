@@ -36,9 +36,9 @@ export default function Home() {
   ];
 
   return (
-    <main className="px-4 py-8">
+    <>
       {/*Intro Section*/}
-      <section className="my-8">
+      <section className="mb-4 lg:mb-10">
         <p className="text-center text-lg lg:text-xl">
           A collection of coding challenges I`ve completed from
           <a
@@ -55,6 +55,6 @@ export default function Home() {
       <section className="flex justify-center">
         <CardList cardList={cardList} />
       </section>
-    </main>
+    </>
   );
 }

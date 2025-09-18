@@ -2,16 +2,27 @@
  * React Icons imports
  */
 import { RiNextjsFill } from "react-icons/ri";
-import { FaReact, FaHtml5, FaCss3Alt, FaGithub } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
+import { SiTypescript, SiGmail, SiFrontendmentor } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
 
 export {
-  RiNextjsFill /*Next.js logo*/,
-  FaReact /*React logo*/,
-  FaHtml5 /*HTML logo*/,
-  FaCss3Alt /*CSS logo*/,
-  SiTypescript /*TypeScript logo*/,
-  FaGithub /*GitHub logo*/,
+  /*Logos*/
+  RiNextjsFill /*Next.js*/,
+  FaReact /*React*/,
+  FaHtml5 /*HTML*/,
+  FaCss3Alt /*CSS*/,
+  SiTypescript /*TypeScript*/,
+  FaGithub /*GitHub*/,
+  FaLinkedin /*Linkedin*/,
+  SiGmail /*SiGmail*/,
+  SiFrontendmentor /*Frontend mentor*/,
+  /*Other*/
   FiExternalLink /*link*/,
 };
