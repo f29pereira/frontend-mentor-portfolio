@@ -3,7 +3,7 @@ import type { CardProps } from "../types";
 //List of Card components data
 export const cardList: CardProps[] = [
   {
-    imageSrc: "/images/weather_now.png",
+    imageSrc: "images/weather_now.png",
     imageAlt: "Weather App challenge Challenge",
     cardTitle: "Weather Now",
     technologies: ["nextjs", "react", "typescript", "html", "css", "api"],
@@ -13,7 +13,7 @@ export const cardList: CardProps[] = [
     codeLink: "https://github.com/f29pereira/weather-app",
   },
   {
-    imageSrc: "/images/fylo_landing_page.png",
+    imageSrc: "images/fylo_landing_page.png",
     imageAlt: "Fylo Landing Page Challenge",
     cardTitle: "Fylo landing page",
     technologies: ["nextjs", "react", "typescript", "html", "css"],
@@ -23,7 +23,7 @@ export const cardList: CardProps[] = [
     codeLink: "https://github.com/f29pereira/fylo",
   },
   {
-    imageSrc: "/images/bento_grid.png",
+    imageSrc: "images/bento_grid.png",
     imageAlt: "Bento Grid Challenge",
     cardTitle: "Bento Grid",
     technologies: ["nextjs", "react", "html", "css"],
@@ -32,7 +32,7 @@ export const cardList: CardProps[] = [
     codeLink: "https://github.com/f29pereira/bento-grid",
   },
   {
-    imageSrc: "/images/order_summary.png",
+    imageSrc: "images/order_summary.png",
     imageAlt: "Order Summary Challenge",
     cardTitle: "Order Summary",
     technologies: ["nextjs", "react", "typescript", "html", "css"],

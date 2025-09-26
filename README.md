@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Mentor Challenges Portfolio
 
-## Getting Started
+This is a collection of coding challenges I’ve completed from [Frontend Mentor](https://www.frontendmentor.io/home).
 
-First, run the development server:
+![Frontend Mentor Challenges Portfolio](public/images/readme/frontend_mentor_portfolio.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔗 [Live Demo](https://f29pereira.github.io/frontend-mentor-portfolio/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Table of contents
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Overview](#📌-overview)
+- [The Challenges](#🧑‍💻-the-challenges)
+- [Technologies](#🛠️-technologies)
+- [Author](#👤-author)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📌 Overview
 
-## Learn More
+In these challenges, I focused on:
 
-To learn more about Next.js, take a look at the following resources:
+- Building **mobile-first, responsive layouts**
+- Practicing **semantic HTML** and **accessible design**
+- Writing **clean, maintainable React code**
+- Using **TypeScript** to improve reliability
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧑‍💻 The challenges
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Weather Now
 
-## Deploy on Vercel
+A responsive weather app with search functionality, unit conversion, and detailed forecasts using the [Open-Meteo API](https://open-meteo.com/).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![weather now challenge](public/images/readme/weather_now.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Technologies used:** Next.js, React, TypeScript, HTML, CSS, and Open-Meteo API
+
+🔗 [Live Demo](https://f29pereira.github.io/weather-app/) | 📂 [Code](https://github.com/f29pereira/weather-app)
+
+### Fylo
+
+A dark-themed landing page design for Fylo, a cloud storage service.
+
+![fylo challenge](public/images/readme/fylo.png)
+
+**Technologies used:** Next.js, React, TypeScript, HTML, and CSS
+
+🔗 [Live Demo](https://f29pereira.github.io/fylo/) | 📂 [Code](https://github.com/f29pereira/fylo)
+
+### Bento Grid
+
+Bento-style grid layout.
+
+![bento grid challenge](public/images/readme/bento_grid.png)
+
+**Technologies used:** Next.js, React, HTML, and CSS
+
+🔗 [Live Demo](https://f29pereira.github.io/bento-grid/) | 📂 [Code](https://github.com/f29pereira/bento-grid)
+
+### Order Summary
+
+An order summary card component for a music subscription plan.
+
+![order summary challenge](public/images/readme/order_summary.png)
+
+**Technologies used:** Next.js, React, TypeScript, HTML, and CSS
+
+🔗 [Live Demo](https://f29pereira.github.io/order-summary/) | 📂 [Code](https://github.com/f29pereira/order-summary)
+
+## 🛠️ Technologies
+
+- **Frameworks:** Next.js
+- **Libraries:** React
+- **Languages:** TypeScript, HTML, CSS
+- **APIs:** Open-Meteo API
+- **Tools:** Git, GitHub, VS Code
+
+## 👤 Author
+
+- GitHub — [@f29pereira](https://github.com/f29pereira)
+- Frontend Mentor — [@f29pereira](https://www.frontendmentor.io/profile/f29pereira)
+- LinkedIn — [Filipe Pereira](https://www.linkedin.com/in/filipe-pereira-b757471b9)
