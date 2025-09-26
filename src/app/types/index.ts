@@ -3,36 +3,37 @@ import { ReactNode } from "react";
 /**
  * Union of valid technology names
  */
-export type TechnologyName = "nextjs" | "react" | "typescript" | "html" | "css";
+export type TechnologyName =
+  | "nextjs"
+  | "react"
+  | "typescript"
+  | "html"
+  | "css"
+  | "api";
 
 /**
  * Props for the Card component
+ * @property imageSrc        - URL of image displayed at the top
+ * @property imageAlt        - alt text for the image
+ * @property cardTitle       - title of the card
+ * @property cardDescription - description of the card
+ * @property technologies    - technologies used
+ * @property demoLink        - link URL for the "Live Demo" button
+ * @property codeLink        - link URL for the "View Code" button
  */
 export type CardProps = {
-  //URL of image displayed at the top
   imageSrc: string;
-
-  //Alt text for the image
   imageAlt: string;
-
-  //Title of the card
   cardTitle: string;
-
-  //Description of the card
   cardDescription: string;
-
-  //Technologies used
   technologies: TechnologyName[];
-
-  //Link URL for the "Live Demo"
   demoLink: string;
-
-  //Link URL for the "View Code"
   codeLink: string;
 };
 
 /**
  * Props for the CardList component
+ * @property cardList - list of Card components
  */
 export type CardListProps = {
   cardList: CardProps[];
@@ -40,18 +41,18 @@ export type CardListProps = {
 
 /**
  * Props for the LinkButton component
+ * @property link        - link URL
+ * @property description - button description
  */
 export type LinkButtonProps = {
-  //Link URL
   link: string;
-  //Link description
   description: ReactNode;
 };
 
 /**
  * Props for the Technology component
+ * @property name - technology name
  */
 export type TechnologyProps = {
-  //Technology name
   name: TechnologyName;
 };

@@ -5,6 +5,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   SiTypescript,
+  AiOutlineApi,
 } from "@/app/utils/icons";
 import { ReactNode } from "react";
 
@@ -29,6 +30,8 @@ export default function Technology({ name }: TechnologyProps) {
         return <FaHtml5 />;
       case "css":
         return <FaCss3Alt />;
+      case "api":
+        return <AiOutlineApi />;
       default:
         return techName;
     }
@@ -47,6 +50,8 @@ export default function Technology({ name }: TechnologyProps) {
         return "HTML";
       case "css":
         return "CSS";
+      case "api":
+        return "API";
       default:
         return techName[0].toUpperCase() + techName.slice(1);
     }
