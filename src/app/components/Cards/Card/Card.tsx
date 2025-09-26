@@ -24,8 +24,9 @@ export default function Card({
   return (
     <div
       className="flex flex-col items-center overflow-hidden bg-white border-2 border-stone-300 
-      rounded-lg shadow-lg hover:shadow-xl duration-700 w-80 h-130 
-      md:w-100 md:h-150"
+      rounded-lg shadow-lg hover:shadow-xl duration-700 w-85 h-140 
+      md:w-100 md:h-150 
+      lg:w-110 lg:h-165"
     >
       {/*Card Image*/}
       <div className="relative w-full flex-[1] overflow-hidden">
@@ -36,7 +37,7 @@ export default function Card({
           className="object-cover hover:scale-105 duration-700"
         />
       </div>
-      <div className="h-[20rem] flex flex-col items-center p-4 overflow-hidden">
+      <div className="h-[20rem] flex flex-col items-center p-4 overflow-hidden lg:h-[22rem]">
         <header className="mb-8">
           {/*Card Title*/}
           <h2 className="text-xl font-bold md:text-xl lg:text-2xl">
@@ -44,7 +45,7 @@ export default function Card({
           </h2>
         </header>
 
-        <p className="text-center h-12 mb-8 lg:text-lg">{cardDescription}</p>
+        <p className="text-center h-20 mb-8 lg:text-lg">{cardDescription}</p>
 
         {/*Technologies list*/}
         <div className="flex flex-wrap gap-4 mb-12">

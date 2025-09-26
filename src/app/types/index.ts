@@ -3,7 +3,13 @@ import { ReactNode } from "react";
 /**
  * Union of valid technology names
  */
-export type TechnologyName = "nextjs" | "react" | "typescript" | "html" | "css";
+export type TechnologyName =
+  | "nextjs"
+  | "react"
+  | "typescript"
+  | "html"
+  | "css"
+  | "api";
 
 /**
  * Props for the Card component

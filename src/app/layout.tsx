@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en" className={`${caprasimo.variable} ${inter.variable}`}>
       <body className="bg-slate-100 flex flex-col min-h-screen">
         <Nav />
-        <main className="flex-1 p-10 lg:py-14 xl:py-20">{children}</main>
+        <main className="flex-1 py-10 px-4 lg:py-14 xl:py-20">{children}</main>
         <Footer />
       </body>
     </html>
