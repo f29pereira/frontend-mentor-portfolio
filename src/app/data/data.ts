@@ -6,7 +6,15 @@ export const cardList: CardProps[] = [
     imageSrc: "images/weather_now.png",
     imageAlt: "Weather App challenge Challenge",
     cardTitle: "Weather Now",
-    technologies: ["nextjs", "react", "typescript", "html", "css", "api"],
+    technologies: [
+      "nextjs",
+      "react",
+      "typescript",
+      "html",
+      "css",
+      "figma",
+      "api",
+    ],
     cardDescription:
       "App with search functionality, unit conversion, and forecasts using the Open-Meteo API.",
     demoLink: "https://f29pereira.github.io/weather-app/",

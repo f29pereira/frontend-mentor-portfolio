@@ -6,11 +6,12 @@ import {
   FaCss3Alt,
   SiTypescript,
   AiOutlineApi,
+  FaFigma,
 } from "@/app/utils/icons";
 import { ReactNode } from "react";
 
 /**
- * Renders technology name with associated color
+ * Renders technology icon with associated color
  *
  * Props are defined in {@link TechnologyProps}.
  */
@@ -32,6 +33,8 @@ export default function Technology({ name }: TechnologyProps) {
         return <FaCss3Alt />;
       case "api":
         return <AiOutlineApi />;
+      case "figma":
+        return <FaFigma />;
       default:
         return techName;
     }
@@ -62,7 +65,7 @@ export default function Technology({ name }: TechnologyProps) {
       className="font-extrabold text-sm"
       style={{ color: `var(--color-${name})` }}
     >
-      <span className="text-3xl md:text-4xl" title={formatName(name)}>
+      <span className="text-2xl md:text-4xl" title={formatName(name)}>
         {getIcon(name)}
       </span>
     </div>

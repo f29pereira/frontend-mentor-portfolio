@@ -9,7 +9,8 @@ export type TechnologyName =
   | "typescript"
   | "html"
   | "css"
-  | "api";
+  | "api"
+  | "figma";
 
 /**
  * Props for the Card component
