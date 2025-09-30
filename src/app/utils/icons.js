@@ -9,6 +9,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaCode,
+  FaFigma,
 } from "react-icons/fa";
 import { SiTypescript, SiGmail, SiFrontendmentor } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
@@ -26,6 +27,7 @@ export {
   SiGmail /*SiGmail*/,
   SiFrontendmentor /*Frontend mentor*/,
   AiOutlineApi /*API*/,
+  FaFigma /*Figma*/,
   /*Other*/
   FiExternalLink /*link*/,
   FaCode /*code*/,

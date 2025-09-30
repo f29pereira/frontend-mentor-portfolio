@@ -8,12 +8,12 @@ This is a collection of coding challenges I’ve completed from [Frontend Mentor
 
 ## Table of contents
 
-- [Overview](#📌-overview)
-- [The Challenges](#🧑‍💻-the-challenges)
-- [Technologies](#🛠️-technologies)
-- [Author](#👤-author)
+- [Overview](#overview)
+- [The Challenges](#the-challenges)
+- [Technologies](#technologies)
+- [Author](#author)
 
-## 📌 Overview
+## Overview
 
 In these challenges, I focused on:
 
@@ -22,7 +22,7 @@ In these challenges, I focused on:
 - Writing **clean, maintainable React code**
 - Using **TypeScript** to improve reliability
 
-## 🧑‍💻 The challenges
+## The challenges
 
 ### Weather Now
 
@@ -64,7 +64,7 @@ An order summary card component for a music subscription plan.
 
 🔗 [Live Demo](https://f29pereira.github.io/order-summary/) | 📂 [Code](https://github.com/f29pereira/order-summary)
 
-## 🛠️ Technologies
+## Technologies
 
 - **Frameworks:** Next.js
 - **Libraries:** React
@@ -72,7 +72,7 @@ An order summary card component for a music subscription plan.
 - **APIs:** Open-Meteo API
 - **Tools:** Git, GitHub, VS Code
 
-## 👤 Author
+## Author
 
 - GitHub — [@f29pereira](https://github.com/f29pereira)
 - Frontend Mentor — [@f29pereira](https://www.frontendmentor.io/profile/f29pereira)
