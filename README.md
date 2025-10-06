@@ -34,6 +34,22 @@ A responsive weather app with search functionality, unit conversion, and detaile
 
 🔗 [Live Demo](https://f29pereira.github.io/weather-app/) | 📂 [Code](https://github.com/f29pereira/weather-app)
 
+### Conference Ticket Generator
+
+A responsive web form with validation (required fields, image type and size, name, email, and GitHub username format) that generates a conference ticket upon successful submission.
+
+**Form**
+
+![conference ticket generator form](public/images/readme/conferenceTicket/form.png)
+
+**Generated Ticket**
+
+![conference ticket generator ticket](public/images/readme/conferenceTicket/ticket.png)
+
+**Technologies used:** Next.js, React, TypeScript, HTML, CSS
+
+🔗 [Live Demo](https://f29pereira.github.io/conference-ticket-generator/) | 📂 [Code](https://github.com/f29pereira/conference-ticket-generator)
+
 ### Fylo
 
 A dark-themed landing page design for Fylo, a cloud storage service.
