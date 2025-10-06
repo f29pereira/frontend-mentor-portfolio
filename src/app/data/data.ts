@@ -21,6 +21,16 @@ export const cardList: CardProps[] = [
     codeLink: "https://github.com/f29pereira/weather-app",
   },
   {
+    imageSrc: "images/conference_ticket_generator.png",
+    imageAlt: "Conference Ticket Generator Challenge",
+    cardTitle: "Conference Ticket Generator",
+    technologies: ["nextjs", "react", "typescript", "html", "css"],
+    cardDescription:
+      "Form with validation that generates a styled conference ticket.",
+    demoLink: "https://f29pereira.github.io/conference-ticket-generator/",
+    codeLink: "https://github.com/f29pereira/conference-ticket-generator",
+  },
+  {
     imageSrc: "images/fylo_landing_page.png",
     imageAlt: "Fylo Landing Page Challenge",
     cardTitle: "Fylo landing page",
