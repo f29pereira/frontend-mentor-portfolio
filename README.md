@@ -24,16 +24,6 @@ In these challenges, I focused on:
 
 ## The challenges
 
-### Weather Now
-
-A responsive weather app with search functionality, unit conversion, and detailed forecasts using the [Open-Meteo API](https://open-meteo.com/).
-
-![weather now challenge](public/images/readme/weather_now.png)
-
-**Technologies used:** Next.js, React, TypeScript, HTML, CSS, and Open-Meteo API
-
-🔗 [Live Demo](https://f29pereira.github.io/weather-app/) | 📂 [Code](https://github.com/f29pereira/weather-app)
-
 ### Conference Ticket Generator
 
 A responsive web form with validation (required fields, image type and size, name, email, and GitHub username format) that generates a conference ticket upon successful submission.
@@ -46,9 +36,19 @@ A responsive web form with validation (required fields, image type and size, nam
 
 ![conference ticket generator ticket](public/images/readme/conferenceTicket/ticket.png)
 
-**Technologies used:** Next.js, React, TypeScript, HTML, CSS
+**Technologies used:** Next.js, React, TypeScript, HTML, CSS, Jest and React testing library
 
 🔗 [Live Demo](https://f29pereira.github.io/conference-ticket-generator/) | 📂 [Code](https://github.com/f29pereira/conference-ticket-generator)
+
+### Weather Now
+
+A responsive weather app with search functionality, unit conversion, and detailed forecasts using the [Open-Meteo API](https://open-meteo.com/).
+
+![weather now challenge](public/images/readme/weather_now.png)
+
+**Technologies used:** Next.js, React, TypeScript, HTML, CSS, and Open-Meteo API
+
+🔗 [Live Demo](https://f29pereira.github.io/weather-app/) | 📂 [Code](https://github.com/f29pereira/weather-app)
 
 ### Fylo
 
