@@ -7,6 +7,8 @@ import {
   SiTypescript,
   AiOutlineApi,
   FaFigma,
+  SiJest,
+  SiTestinglibrary,
 } from "@/app/utils/icons";
 import { ReactNode } from "react";
 
@@ -35,6 +37,10 @@ export default function Technology({ name }: TechnologyProps) {
         return <AiOutlineApi />;
       case "figma":
         return <FaFigma />;
+      case "jest":
+        return <SiJest />;
+      case "react_testing_library":
+        return <SiTestinglibrary />;
       default:
         return techName;
     }
@@ -55,6 +61,8 @@ export default function Technology({ name }: TechnologyProps) {
         return "CSS";
       case "api":
         return "API";
+      case "react_testing_library":
+        return "React testing library";
       default:
         return techName[0].toUpperCase() + techName.slice(1);
     }

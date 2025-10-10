@@ -9,6 +9,8 @@
   --color-css: #1572b6;
   --color-api: #10b981;
   --color-figma: #1abcfe;
+  --color-jest: #99425b;
+  --color-react_testing_library: #e93737;
 }
 
 body {

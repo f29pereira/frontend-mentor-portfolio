@@ -10,7 +10,9 @@ export type TechnologyName =
   | "html"
   | "css"
   | "api"
-  | "figma";
+  | "figma"
+  | "jest"
+  | "react_testing_library";
 
 /**
  * Props for the Card component
