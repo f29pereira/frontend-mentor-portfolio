@@ -3,6 +3,24 @@ import type { CardProps } from "../types";
 //List of Card components data
 export const cardList: CardProps[] = [
   {
+    imageSrc: "images/conference_ticket_generator.png",
+    imageAlt: "Conference Ticket Generator Challenge",
+    cardTitle: "Conference Ticket Generator",
+    technologies: [
+      "nextjs",
+      "react",
+      "typescript",
+      "html",
+      "css",
+      "jest",
+      "react_testing_library",
+    ],
+    cardDescription:
+      "Form with validation that generates a styled conference ticket.",
+    demoLink: "https://f29pereira.github.io/conference-ticket-generator/",
+    codeLink: "https://github.com/f29pereira/conference-ticket-generator",
+  },
+  {
     imageSrc: "images/weather_now.png",
     imageAlt: "Weather App challenge Challenge",
     cardTitle: "Weather Now",
@@ -21,16 +39,6 @@ export const cardList: CardProps[] = [
     codeLink: "https://github.com/f29pereira/weather-app",
   },
   {
-    imageSrc: "images/conference_ticket_generator.png",
-    imageAlt: "Conference Ticket Generator Challenge",
-    cardTitle: "Conference Ticket Generator",
-    technologies: ["nextjs", "react", "typescript", "html", "css"],
-    cardDescription:
-      "Form with validation that generates a styled conference ticket.",
-    demoLink: "https://f29pereira.github.io/conference-ticket-generator/",
-    codeLink: "https://github.com/f29pereira/conference-ticket-generator",
-  },
-  {
     imageSrc: "images/fylo_landing_page.png",
     imageAlt: "Fylo Landing Page Challenge",
     cardTitle: "Fylo landing page",
@@ -45,7 +53,7 @@ export const cardList: CardProps[] = [
     imageAlt: "Bento Grid Challenge",
     cardTitle: "Bento Grid",
     technologies: ["nextjs", "react", "html", "css"],
-    cardDescription: "Bento-style grid layout.",
+    cardDescription: "Responsive bento-style grid layout.",
     demoLink: "https://f29pereira.github.io/bento-grid/",
     codeLink: "https://github.com/f29pereira/bento-grid",
   },

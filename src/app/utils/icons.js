@@ -11,7 +11,13 @@ import {
   FaCode,
   FaFigma,
 } from "react-icons/fa";
-import { SiTypescript, SiGmail, SiFrontendmentor } from "react-icons/si";
+import {
+  SiTypescript,
+  SiGmail,
+  SiFrontendmentor,
+  SiJest,
+  SiTestinglibrary,
+} from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
 import { AiOutlineApi } from "react-icons/ai";
 
@@ -28,6 +34,8 @@ export {
   SiFrontendmentor /*Frontend mentor*/,
   AiOutlineApi /*API*/,
   FaFigma /*Figma*/,
+  SiJest /*Jest*/,
+  SiTestinglibrary /*React Testing Library*/,
   /*Other*/
   FiExternalLink /*link*/,
   FaCode /*code*/,
