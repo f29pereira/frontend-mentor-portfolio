@@ -11,8 +11,8 @@ export default function Nav() {
     >
       <ul className="text-center text-white">
         <div className="flex justify-center items-center gap-4">
-          <FaCode className="text-2xl lg:text-4xl" />
-          <li className="text-xl md:text-2xl lg:text-3xl">
+          <FaCode className="text-3xl sm:text-4xl" />
+          <li className="text-xl sm:text-2xl lg:text-3xl">
             Frontend Mentor Challenges
           </li>
         </div>
