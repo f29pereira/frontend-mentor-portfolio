@@ -32,6 +32,8 @@ export const cardList: CardProps[] = [
       "css",
       "figma",
       "api",
+      "jest",
+      "react_testing_library",
     ],
     cardDescription:
       "App with search functionality, unit conversion, and forecasts using the Open-Meteo API.",

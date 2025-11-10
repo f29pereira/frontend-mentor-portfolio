@@ -37,7 +37,9 @@ export default function Card({
           className="object-cover hover:scale-105 duration-700"
         />
       </div>
-      <div className="h-[20rem] flex flex-col items-center p-4 overflow-hidden lg:h-[22rem]">
+
+      {/*Card Body*/}
+      <div className="h-[20rem] flex flex-col items-center p-4 overflow-hidden md:h-[22rem] lg:h-[22rem]">
         <header className="mb-8">
           {/*Card Title*/}
           <h2 className="text-xl font-bold md:text-xl lg:text-2xl">
@@ -45,10 +47,10 @@ export default function Card({
           </h2>
         </header>
 
-        <p className="text-center h-20 mb-8 lg:text-lg">{cardDescription}</p>
+        <p className="text-center h-20 mb-4 lg:text-lg">{cardDescription}</p>
 
         {/*Technologies list*/}
-        <div className="flex flex-wrap gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 w-[16.5rem] h-16 mb-4 md:mb-16">
           {technologies.map((tech, index) => (
             <div key={index}>
               <Technology name={tech} />
@@ -57,7 +59,7 @@ export default function Card({
         </div>
 
         {/*Card Buttons*/}
-        <div className="flex gap-8">
+        <div className="flex gap-8 mb-4">
           <LinkButton
             link={demoLink}
             description={
