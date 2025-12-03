@@ -10,6 +10,12 @@ This is a collection of coding challenges I’ve completed from [Frontend Mentor
 
 - [Overview](#overview)
 - [The Challenges](#the-challenges)
+  - [Shortly](#shortly)
+  - [Conference Ticket Generator](#conference-ticket-generator)
+  - [Weather Now](#weather-now)
+  - [Fylo](#fylo)
+  - [Bento Grid](#bento-grid)
+  - [Order Summary](#order-summary)
 - [Technologies](#technologies)
 - [Author](#author)
 
@@ -24,6 +30,16 @@ In these challenges, I focused on:
 
 ## The challenges
 
+### Shortly
+
+A responsive URL shortening landing page using the [Clean URI API](https://cleanuri.com/docs).
+
+![shortly challenge](public/images/readme/shortly.png)
+
+**Technologies used:** Next.js, React, Redux Toolkit, React and Redux Developer Tools, TypeScript, HTML, CSS, Jest and React testing library
+
+🔗 [Live Demo](https://f29pereira.github.io/shortly/) | 📂 [Code](https://github.com/f29pereira/shortly)
+
 ### Conference Ticket Generator
 
 A responsive web form with validation (required fields, image type and size, name, email, and GitHub username format) that generates a conference ticket upon successful submission.
@@ -36,7 +52,7 @@ A responsive web form with validation (required fields, image type and size, nam
 
 ![conference ticket generator ticket](public/images/readme/conferenceTicket/ticket.png)
 
-**Technologies used:** Next.js, React, TypeScript, HTML, CSS, Jest and React testing library
+**Technologies used:** Next.js, React, React Developer Tools, TypeScript, HTML, CSS, Jest and React testing library
 
 🔗 [Live Demo](https://f29pereira.github.io/conference-ticket-generator/) | 📂 [Code](https://github.com/f29pereira/conference-ticket-generator)
 
@@ -46,7 +62,7 @@ A responsive weather app with search functionality, unit conversion, and detaile
 
 ![weather now challenge](public/images/readme/weather_now.png)
 
-**Technologies used:** Next.js, React, TypeScript, HTML, CSS, and Open-Meteo API
+**Technologies used:** Next.js, React, React Developer Tools, TypeScript, HTML, CSS, and Open-Meteo API
 
 🔗 [Live Demo](https://f29pereira.github.io/weather-app/) | 📂 [Code](https://github.com/f29pereira/weather-app)
 
@@ -83,10 +99,11 @@ An order summary card component for a music subscription plan.
 ## Technologies
 
 - **Frameworks:** Next.js
-- **Libraries:** React
+- **Testing Frameworks:** Jest
+- **Libraries:** React, Redux Toolkit, React Testing Library
 - **Languages:** TypeScript, HTML, CSS
-- **APIs:** Open-Meteo API
-- **Tools:** Git, GitHub, VS Code
+- **APIs:** Open-Meteo API, Cleanuri API
+- **Tools:** Git, GitHub, VS Code, React and Redux Developer Tools
 
 ## Author
 

@@ -12,7 +12,8 @@ export type TechnologyName =
   | "api"
   | "figma"
   | "jest"
-  | "react_testing_library";
+  | "react_testing_library"
+  | "redux_toolkit";
 
 /**
  * Props for the Card component

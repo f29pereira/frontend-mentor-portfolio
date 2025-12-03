@@ -29,7 +29,7 @@ export default function Card({
       lg:w-110 lg:h-165"
     >
       {/*Card Image*/}
-      <div className="relative w-full flex-[1] overflow-hidden">
+      <div className="relative w-full flex-[1] overflow-hidden border-b-2 border-b-stone-300">
         <Image
           src={imageSrc}
           alt={imageAlt}

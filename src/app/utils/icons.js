@@ -20,6 +20,7 @@ import {
 } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
 import { AiOutlineApi } from "react-icons/ai";
+import { TbBrandRedux } from "react-icons/tb";
 
 export {
   /*Logos*/
@@ -36,6 +37,7 @@ export {
   FaFigma /*Figma*/,
   SiJest /*Jest*/,
   SiTestinglibrary /*React Testing Library*/,
+  TbBrandRedux /*Redux Toolkit*/,
   /*Other*/
   FiExternalLink /*link*/,
   FaCode /*code*/,
