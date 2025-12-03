@@ -3,7 +3,7 @@ import type { CardProps } from "../types";
 //List of Card components data
 export const cardList: CardProps[] = [
   {
-    imageSrc: "images/shortly.png",
+    imageSrc: "images/cards/shortly.png",
     imageAlt: "Shortly Challenge",
     cardTitle: "Shortly",
     technologies: [
@@ -22,7 +22,7 @@ export const cardList: CardProps[] = [
     codeLink: "https://github.com/f29pereira/shortly",
   },
   {
-    imageSrc: "images/conference_ticket_generator.png",
+    imageSrc: "images/cards/conference_ticket_generator.png",
     imageAlt: "Conference Ticket Generator Challenge",
     cardTitle: "Conference Ticket Generator",
     technologies: [
@@ -40,7 +40,7 @@ export const cardList: CardProps[] = [
     codeLink: "https://github.com/f29pereira/conference-ticket-generator",
   },
   {
-    imageSrc: "images/weather_now.png",
+    imageSrc: "images/cards/weather_now.png",
     imageAlt: "Weather App challenge Challenge",
     cardTitle: "Weather Now",
     technologies: [
@@ -60,7 +60,7 @@ export const cardList: CardProps[] = [
     codeLink: "https://github.com/f29pereira/weather-app",
   },
   {
-    imageSrc: "images/fylo_landing_page.png",
+    imageSrc: "images/cards/fylo.png",
     imageAlt: "Fylo Landing Page Challenge",
     cardTitle: "Fylo landing page",
     technologies: ["nextjs", "react", "typescript", "html", "css"],
@@ -70,7 +70,7 @@ export const cardList: CardProps[] = [
     codeLink: "https://github.com/f29pereira/fylo",
   },
   {
-    imageSrc: "images/bento_grid.png",
+    imageSrc: "images/cards/bento_grid.png",
     imageAlt: "Bento Grid Challenge",
     cardTitle: "Bento Grid",
     technologies: ["nextjs", "react", "html", "css"],
@@ -79,7 +79,7 @@ export const cardList: CardProps[] = [
     codeLink: "https://github.com/f29pereira/bento-grid",
   },
   {
-    imageSrc: "images/order_summary.png",
+    imageSrc: "images/cards/order_summary.png",
     imageAlt: "Order Summary Challenge",
     cardTitle: "Order Summary",
     technologies: ["nextjs", "react", "typescript", "html", "css"],
