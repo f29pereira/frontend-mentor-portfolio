@@ -9,6 +9,7 @@ import {
   FaFigma,
   SiJest,
   SiTestinglibrary,
+  TbBrandRedux,
 } from "@/app/utils/icons";
 import { ReactNode } from "react";
 
@@ -41,6 +42,8 @@ export default function Technology({ name }: TechnologyProps) {
         return <SiJest />;
       case "react_testing_library":
         return <SiTestinglibrary />;
+      case "redux_toolkit":
+        return <TbBrandRedux />;
       default:
         return techName;
     }
@@ -63,6 +66,8 @@ export default function Technology({ name }: TechnologyProps) {
         return "API";
       case "react_testing_library":
         return "React testing library";
+      case "redux_toolkit":
+        return "Redux Toolkit";
       default:
         return techName[0].toUpperCase() + techName.slice(1);
     }
