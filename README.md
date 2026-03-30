@@ -10,6 +10,7 @@ This is a collection of coding challenges I’ve completed from [Frontend Mentor
 
 - [Overview](#overview)
 - [The Challenges](#the-challenges)
+  - [Sneakers](#sneakers)
   - [Shortly](#shortly)
   - [Conference Ticket Generator](#conference-ticket-generator)
   - [Weather Now](#weather-now)
@@ -29,6 +30,16 @@ In these challenges, I focused on:
 - Using **TypeScript** to improve reliability
 
 ## The challenges
+
+### Sneakers
+
+A responsive e-commerce product page with product info and user shopping cart.
+
+![sneakers challenge](public/images/readme/sneakers.png)
+
+**Technologies used:** Next.js, React, Redux Toolkit, React and Redux Developer Tools, TypeScript, HTML, CSS, clsx, focus-trap-react, Jest and React testing library
+
+🔗 [Live Demo](https://f29pereira.github.io/sneakers/) | 📂 [Code](https://github.com/f29pereira/sneakers)
 
 ### Shortly
 
