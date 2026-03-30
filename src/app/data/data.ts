@@ -3,6 +3,26 @@ import type { CardProps } from "../types";
 //List of Card components data
 export const cardList: CardProps[] = [
   {
+    imageSrc: "images/cards/sneakers.png",
+    imageAlt: "Sneakers Challenge",
+    cardTitle: "Sneakers",
+    technologies: [
+      "nextjs",
+      "react",
+      "redux_toolkit",
+      "typescript",
+      "html",
+      "css",
+      "api",
+      "jest",
+      "react_testing_library",
+    ],
+    cardDescription:
+      "E-commerce product page with product info and user shopping cart.",
+    demoLink: "https://f29pereira.github.io/sneakers/",
+    codeLink: "https://github.com/f29pereira/sneakers",
+  },
+  {
     imageSrc: "images/cards/shortly.png",
     imageAlt: "Shortly Challenge",
     cardTitle: "Shortly",
