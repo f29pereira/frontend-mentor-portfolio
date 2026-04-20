@@ -110,8 +110,8 @@ An order summary card component for a music subscription plan.
 ## Technologies
 
 - **Frameworks:** Next.js
-- **Testing Frameworks:** Jest
-- **Libraries:** React, Redux Toolkit, React Testing Library
+- **Testing Frameworks:** Jest, Playwright
+- **Libraries:** React, Redux Toolkit, React Testing Library, user-event, clsx
 - **Languages:** TypeScript, HTML, CSS
 - **APIs:** Open-Meteo API, Cleanuri API
 - **Tools:** Git, GitHub, VS Code, React and Redux Developer Tools
