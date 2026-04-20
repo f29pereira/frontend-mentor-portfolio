@@ -13,7 +13,6 @@ export const cardList: CardProps[] = [
       "typescript",
       "html",
       "css",
-      "api",
       "jest",
       "react_testing_library",
     ],
