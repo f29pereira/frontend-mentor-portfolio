@@ -42,9 +42,9 @@ export default function Card({
       <div className="h-[20rem] flex flex-col items-center p-4 overflow-hidden md:h-[22rem] lg:h-[22rem]">
         <header className="mb-8">
           {/*Card Title*/}
-          <h2 className="text-xl font-bold md:text-xl lg:text-2xl">
+          <h3 className="text-xl font-bold md:text-xl lg:text-2xl">
             {cardTitle}
-          </h2>
+          </h3>
         </header>
 
         <p className="text-center h-20 mb-4 lg:text-lg">{cardDescription}</p>
