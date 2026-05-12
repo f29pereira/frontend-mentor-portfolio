@@ -10,6 +10,7 @@ import {
   FaLinkedin,
   FaCode,
   FaFigma,
+  FaFileDownload,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -41,4 +42,5 @@ export {
   /*Other*/
   FiExternalLink /*link*/,
   FaCode /*code*/,
+  FaFileDownload /*download file*/,
 };
