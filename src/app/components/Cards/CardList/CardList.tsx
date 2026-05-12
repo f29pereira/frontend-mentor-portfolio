@@ -8,7 +8,7 @@ import Card from "../Card/Card";
  */
 export default function CardList({ cardList }: CardListProps) {
   return (
-    <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-y-16 xl:grid-cols-3 xl:gap-16">
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-y-16 2xl:grid-cols-3 2xl:gap-16">
       {cardList.map((card: CardProps, index) => (
         <Card
           key={index}
