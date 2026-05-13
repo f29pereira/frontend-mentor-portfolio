@@ -1,7 +1,7 @@
 import type { CardProps } from "@/app/types";
 import Image from "next/image";
 import LinkButton from "../../../ui/LinkButton/LinkButton";
-import Technology from "../../Technology/Technology";
+import TechnologyIcon from "../../Technology/TechnologyIcon";
 import { FiExternalLink, FaGithub } from "@/app/utils/icons";
 
 /**
@@ -53,7 +53,7 @@ export default function Card({
         <div className="flex flex-wrap justify-center gap-4 w-[16.5rem] h-16 mb-4 md:mb-16">
           {technologies.map((tech, index) => (
             <div key={index}>
-              <Technology name={tech} />
+              <TechnologyIcon name={tech} />
             </div>
           ))}
         </div>

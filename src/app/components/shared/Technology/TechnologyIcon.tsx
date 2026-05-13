@@ -18,7 +18,7 @@ import { ReactNode } from "react";
  *
  * Props are defined in {@link TechnologyProps}.
  */
-export default function Technology({ name }: TechnologyProps) {
+export default function TechnologyIcon({ name }: TechnologyProps) {
   /**
    * Sets technology icon
    */
