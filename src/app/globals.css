@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-3xl: 1800px;
+}
+
 :root {
   /*Technologies colors*/
   --color-nextjs: #000000;
