@@ -1,5 +1,5 @@
 import type { CardListProps, CardProps } from "@/app/types";
-import Card from "../Card/Card";
+import Card from "../../../shared/Cards/Card/Card";
 
 /**
  * Renders a grid of Card components

@@ -1,6 +1,6 @@
 import type { CardProps } from "@/app/types";
 import Image from "next/image";
-import LinkButton from "../../LinkButton/LinkButton";
+import LinkButton from "../../../ui/LinkButton/LinkButton";
 import Technology from "../../Technology/Technology";
 import { FiExternalLink, FaGithub } from "@/app/utils/icons";
 

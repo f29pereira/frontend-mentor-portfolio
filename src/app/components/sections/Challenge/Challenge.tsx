@@ -1,4 +1,4 @@
-import CardList from "../../Cards/CardList/CardList";
+import CardList from "../../shared/Cards/CardList/CardList";
 import { cardList } from "@/app/data/data";
 
 /**
