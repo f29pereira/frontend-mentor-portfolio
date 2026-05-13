@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    // Always open .css files in Tailwind CSS mode
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    // Show completions when righting Tailwind classes
+    "strings": "on"
+  }
+}
