@@ -18,10 +18,13 @@ import {
   SiFrontendmentor,
   SiJest,
   SiTestinglibrary,
+  SiTailwindcss,
 } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
 import { AiOutlineApi } from "react-icons/ai";
 import { TbBrandRedux } from "react-icons/tb";
+import { SiGithubactions } from "react-icons/si";
+import { IoLogoGithub } from "react-icons/io";
 
 export {
   /*Logos*/
@@ -29,6 +32,7 @@ export {
   FaReact /*React*/,
   FaHtml5 /*HTML*/,
   FaCss3Alt /*CSS*/,
+  SiTailwindcss /*Tailwindcss*/,
   SiTypescript /*TypeScript*/,
   FaGithub /*GitHub*/,
   FaLinkedin /*Linkedin*/,
@@ -39,6 +43,8 @@ export {
   SiJest /*Jest*/,
   SiTestinglibrary /*React Testing Library*/,
   TbBrandRedux /*Redux Toolkit*/,
+  IoLogoGithub /*GitHub logo*/,
+  SiGithubactions /*GitHub actions*/,
   /*Other*/
   FiExternalLink /*link*/,
   FaCode /*code*/,
