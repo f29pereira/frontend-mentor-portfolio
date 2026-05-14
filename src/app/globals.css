@@ -6,16 +6,18 @@
 
 :root {
   /*Technologies colors*/
+  --color-api: #10b981;
+  --color-css: #1572b6;
+  --color-git_hub: #181717;
+  --color-git_hub_actions: #2088ff;
+  --color-html: #e34f26;
+  --color-jest: #99425b;
   --color-nextjs: #000000;
   --color-react: #61dafb;
-  --color-typescript: #3178c6;
-  --color-html: #e34f26;
-  --color-css: #1572b6;
-  --color-api: #10b981;
-  --color-figma: #1abcfe;
-  --color-jest: #99425b;
   --color-react_testing_library: #e93737;
   --color-redux_toolkit: #764abc;
+  --color-tailwind_css: #38bdf8;
+  --color-typescript: #3178c6;
 }
 
 body {

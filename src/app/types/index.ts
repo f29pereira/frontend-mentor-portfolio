@@ -4,16 +4,23 @@ import { ReactNode } from "react";
  * Union of valid technology names
  */
 export type TechnologyName =
-  | "nextjs"
-  | "react"
-  | "typescript"
-  | "html"
-  | "css"
   | "api"
+  | "css"
   | "figma"
+  | "git_hub"
+  | "git_hub_actions"
+  | "hero_icons"
+  | "html"
   | "jest"
+  | "nextjs"
+  | "nvda"
+  | "playwright"
+  | "react"
+  | "react_icons"
   | "react_testing_library"
-  | "redux_toolkit";
+  | "redux_toolkit"
+  | "tailwind_css"
+  | "typescript";
 
 /**
  * Props for the Card component
@@ -41,6 +48,20 @@ export type CardProps = {
  */
 export type CardListProps = {
   cardList: CardProps[];
+};
+
+/**
+ * Props for the TechnologyCard component
+ * @property icon        - icon representing the technology
+ * @property name        - name
+ * @property description - description of the purpose of the technology
+ * @property link        - technology website
+ */
+export type TechnologyCardProps = {
+  icon: ReactNode;
+  name: string;
+  description: string;
+  link: string;
 };
 
 /**
