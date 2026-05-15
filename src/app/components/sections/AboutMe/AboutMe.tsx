@@ -11,7 +11,12 @@ export default function AboutMe() {
   return (
     <section className={clsx("mb-20", "sm:mb-32")}>
       {/*Title*/}
-      <h1 className="font-bold text-indigo-950 text-3xl mb-4 lg:text-4xl xl:mb-8">
+      <h1
+        className={clsx(
+          "mb-4 text-3xl font-bold text-indigo-950",
+          "lg:text-4xl xl:mb-8",
+        )}
+      >
         About me
       </h1>
 
@@ -41,15 +46,23 @@ export default function AboutMe() {
       </p>
 
       {/*Download CV link*/}
-      <div className="flex justify-center items-center mt-8 md:mt-10">
+      <div
+        className={clsx("flex justify-center items-center mt-8", "md:mt-10")}
+      >
         <a
-          className="block bg-indigo-600 shadow-lg shadow-indigo-500/50 text-center text-white font-bold cursor-pointer rounded-xl px-8 py-4 md:hover:bg-indigo-500"
+          className={clsx(
+            "block px-8 py-4",
+            "bg-indigo-600 shadow-lg shadow-indigo-500/50",
+            "text-center text-white font-bold",
+            "cursor-pointer rounded-xl",
+            "md:hover:bg-indigo-500",
+          )}
           aria-label="Dowload my CV as PDF"
           href="cv/CV_Filipe_Pereira.pdf"
           target="_blank"
           download
         >
-          <div className="flex justify-center items-center gap-4">
+          <div className={clsx("flex justify-center items-center gap-4")}>
             <FaFileDownload className="text-xl lg:text-2xl" />
             <span className="lg:text-lg">Download my CV</span>
           </div>
