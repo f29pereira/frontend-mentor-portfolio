@@ -19,7 +19,7 @@ export default function Technology() {
         These are the technologies I used across my Frontend Mentor challenges:
       </p>
 
-      <div className="mt-8 md:mt-10">
+      <div className="flex justify-center mt-8 md:mt-10">
         <TechnologiesList />
       </div>
     </section>
