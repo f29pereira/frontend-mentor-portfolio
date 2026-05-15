@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import CardList from "../../shared/Cards/CardList/CardList";
 import { cardList } from "@/app/data/data";
 
@@ -9,7 +10,7 @@ import { cardList } from "@/app/data/data";
  */
 export default function Challenge() {
   return (
-    <section className="mb-8">
+    <section className={clsx("mb-20", "sm:mb-32")}>
       {/*Title*/}
       <h2 className="font-bold text-indigo-950 text-2xl mb-4 lg:text-3xl xl:mb-8">
         Challenges

@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { FaFileDownload } from "@/app/utils/icons";
 
 /**
@@ -8,7 +9,7 @@ import { FaFileDownload } from "@/app/utils/icons";
  */
 export default function AboutMe() {
   return (
-    <section className="mb-16 lg:mb-10 xl:mb-16">
+    <section className={clsx("mb-20", "sm:mb-32")}>
       {/*Title*/}
       <h1 className="font-bold text-indigo-950 text-3xl mb-4 lg:text-4xl xl:mb-8">
         About me
