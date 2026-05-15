@@ -28,7 +28,6 @@ export type TechnologyName =
  * @property imageAlt        - alt text for the image
  * @property cardTitle       - title of the card
  * @property cardDescription - description of the card
- * @property technologies    - technologies used
  * @property demoLink        - link URL for the "Live Demo" button
  * @property codeLink        - link URL for the "View Code" button
  */
@@ -37,7 +36,6 @@ export type CardProps = {
   imageAlt: string;
   cardTitle: string;
   cardDescription: string;
-  technologies: TechnologyName[];
   demoLink: string;
   codeLink: string;
 };

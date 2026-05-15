@@ -1,8 +1,8 @@
+import clsx from "clsx";
 import type { CardProps } from "@/app/types";
 import Image from "next/image";
 import LinkButton from "../../../ui/LinkButton/LinkButton";
-import TechnologyIcon from "../../Technology/TechnologyIcon";
-import { FiExternalLink, FaGithub } from "@/app/utils/icons";
+import { FiExternalLink, IoLogoGithub } from "@/app/utils/icons";
 
 /**
  * Renders a card component with:
@@ -16,50 +16,49 @@ export default function Card({
   imageSrc,
   imageAlt,
   cardTitle,
-  technologies,
   cardDescription,
   demoLink,
   codeLink,
 }: CardProps) {
   return (
-    <div
-      className="flex flex-col items-center overflow-hidden bg-white border-2 border-stone-300 
-      rounded-lg shadow-lg hover:shadow-xl duration-700 w-85 h-140 
-      md:w-100 md:h-150 
-      lg:w-110 lg:h-165"
+    <article
+      className={clsx(
+        "flex flex-col px-3.5 py-5",
+        "bg-white border-2 border-stone-300 rounded-3xl shadow-lg",
+        "hover:shadow-xl duration-700",
+      )}
     >
       {/*Card Image*/}
-      <div className="relative w-full flex-[1] overflow-hidden border-b-2 border-b-stone-300">
+      <div
+        className={clsx(
+          "relative h-60 overflow-hidden",
+          "border-1 border-stone-300 rounded-3xl",
+          "sm:h-[25rem]",
+        )}
+      >
         <Image
           src={imageSrc}
           alt={imageAlt}
           fill
-          className="object-cover hover:scale-105 duration-700"
+          className={clsx(
+            "rounded-3xl object-fill hover:scale-105 duration-700",
+          )}
         />
       </div>
 
       {/*Card Body*/}
-      <div className="h-[20rem] flex flex-col items-center p-4 overflow-hidden md:h-[22rem] lg:h-[22rem]">
-        <header className="mb-8">
-          {/*Card Title*/}
-          <h3 className="text-xl font-bold md:text-xl lg:text-2xl">
-            {cardTitle}
-          </h3>
-        </header>
+      <div className="flex-1 flex flex-col">
+        {/*Card Title*/}
+        <h3 className={clsx("my-4 text-center font-bold text-xl", "sm:my-6")}>
+          {cardTitle}
+        </h3>
 
-        <p className="text-center h-20 mb-4 lg:text-lg">{cardDescription}</p>
-
-        {/*Technologies list*/}
-        <div className="flex flex-wrap justify-center gap-4 w-[16.5rem] h-16 mb-4 md:mb-16">
-          {technologies.map((tech, index) => (
-            <div key={index}>
-              <TechnologyIcon name={tech} />
-            </div>
-          ))}
-        </div>
+        <p className={clsx("mb-8 text-center", "sm:mb-10")}>
+          {cardDescription}
+        </p>
 
         {/*Card Buttons*/}
-        <div className="flex gap-8 mb-4">
+        <div className={clsx("flex justify-center gap-8 mt-auto")}>
           <LinkButton
             link={demoLink}
             description={
@@ -73,13 +72,13 @@ export default function Card({
             link={codeLink}
             description={
               <>
-                <FaGithub className="text-xl" />
+                <IoLogoGithub className="text-xl" />
                 <span className="font-bold">Repo</span>
               </>
             }
           />
         </div>
       </div>
-    </div>
+    </article>
   );
 }

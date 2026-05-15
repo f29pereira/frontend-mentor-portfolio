@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter, Caprasimo } from "next/font/google";
+import clsx from "clsx";
 import Nav from "./components/sections/Nav/Nav";
 import Footer from "./components/sections/Footer/Footer";
 
@@ -27,9 +28,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${caprasimo.variable} ${inter.variable}`}>
-      <body className="bg-slate-100 flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen bg-slate-100">
         <Nav />
-        <main className="flex-1 px-4 my-16 md:px-8 lg:px-12 xl:px-16 2xl:px-20 3xl:px-40">
+        <main
+          className={clsx(
+            "flex-1 px-4 py-16",
+            "sm:px-10 md:px-12",
+            "lg:px-14 xl:px-16 2xl:px-20",
+            "3xl:px-40 3xl:py-20",
+          )}
+        >
           {children}
         </main>
         <Footer />
