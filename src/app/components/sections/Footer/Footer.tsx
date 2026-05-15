@@ -1,7 +1,7 @@
 import {
   FaLinkedin,
   SiGmail,
-  FaGithub,
+  IoLogoGithub,
   SiFrontendmentor,
 } from "@/app/utils/icons";
 
@@ -30,7 +30,7 @@ export default function Footer() {
             <FaLinkedin />
           </a>
           <a href="https://github.com/f29pereira" target="_blank">
-            <FaGithub />
+            <IoLogoGithub />
           </a>
           <a
             href="https://www.frontendmentor.io/profile/f29pereira"
