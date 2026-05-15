@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import TechnologyCard from "../TechnologyCard/TechnologyCard";
 import TechnologyIcon from "../TechnologyIcon";
 
@@ -15,12 +16,20 @@ import TechnologyIcon from "../TechnologyIcon";
  */
 export default function TechnologiesList() {
   return (
-    <div className="mt-8 md:mt-10">
+    <div className={clsx("mt-8", "md:mt-10")}>
       {/*Framework*/}
       <div className="mb-8">
-        <h3 className="text-slate-800 font-bold text-xl mb-4">Framework</h3>
+        <h3 className={clsx("mb-4 text-slate-800 font-bold text-xl")}>
+          Framework
+        </h3>
 
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-y-4.5 2xl:grid-cols-3">
+        <div
+          className={clsx(
+            "grid grid-cols-1 gap-4",
+            "lg:grid-cols-2 lg:gap-y-4.5",
+            "2xl:grid-cols-3",
+          )}
+        >
           <TechnologyCard
             icon={<TechnologyIcon name="nextjs" />}
             name="Next.js"
@@ -32,11 +41,17 @@ export default function TechnologiesList() {
 
       {/*Markup and Styling*/}
       <div className="mb-8">
-        <h3 className="text-slate-800 font-bold text-xl mb-4">
+        <h3 className={clsx("mb-4 text-slate-800 font-bold text-xl")}>
           Markup and Styling
         </h3>
 
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-y-4.5 2xl:grid-cols-3">
+        <div
+          className={clsx(
+            "grid grid-cols-1 gap-4",
+            "lg:grid-cols-2 lg:gap-y-4.5",
+            "2xl:grid-cols-3",
+          )}
+        >
           <TechnologyCard
             icon={<TechnologyIcon name="html" />}
             name="HTML"
@@ -62,11 +77,17 @@ export default function TechnologiesList() {
 
       {/*Programming Language*/}
       <div className="mb-8">
-        <h3 className="text-slate-800 font-bold text-xl mb-4">
+        <h3 className={clsx("mb-4 text-slate-800 font-bold text-xl")}>
           Programming Language
         </h3>
 
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-y-4.5 22xl:grid-cols-3">
+        <div
+          className={clsx(
+            "grid grid-cols-1 gap-4",
+            "lg:grid-cols-2 lg:gap-y-4.5",
+            "2xl:grid-cols-3",
+          )}
+        >
           <TechnologyCard
             icon={<TechnologyIcon name="typescript" />}
             name="Typescript"
@@ -78,9 +99,17 @@ export default function TechnologiesList() {
 
       {/*Libraries*/}
       <div className="mb-8">
-        <h3 className="text-slate-800 font-bold text-xl mb-4">Libraries</h3>
+        <h3 className={clsx("mb-4 text-slate-800 font-bold text-xl")}>
+          Libraries
+        </h3>
 
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-y-4.5 2xl:grid-cols-3">
+        <div
+          className={clsx(
+            "grid grid-cols-1 gap-4",
+            "lg:grid-cols-2 lg:gap-y-4.5",
+            "2xl:grid-cols-3",
+          )}
+        >
           <TechnologyCard
             icon={<TechnologyIcon name="react" />}
             name="React"
@@ -106,11 +135,17 @@ export default function TechnologiesList() {
 
       {/*State Management*/}
       <div className="mb-8">
-        <h3 className="text-slate-800 font-bold text-xl mb-4">
+        <h3 className={clsx("mb-4 text-slate-800 font-bold text-xl")}>
           State Management
         </h3>
 
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-y-4.5 2xl:grid-cols-3">
+        <div
+          className={clsx(
+            "grid grid-cols-1 gap-4",
+            "lg:grid-cols-2 lg:gap-y-4.5",
+            "2xl:grid-cols-3",
+          )}
+        >
           <TechnologyCard
             icon={<TechnologyIcon name="redux_toolkit" />}
             name="Redux Toolkit"
@@ -122,11 +157,17 @@ export default function TechnologiesList() {
 
       {/*Testing Frameworks and Libraries*/}
       <div className="mb-8">
-        <h3 className="text-slate-800 font-bold text-xl mb-4">
+        <h3 className={clsx("mb-4 text-slate-800 font-bold text-xl")}>
           Testing Frameworks and Libraries
         </h3>
 
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-y-4.5 2xl:grid-cols-3">
+        <div
+          className={clsx(
+            "grid grid-cols-1 gap-4",
+            "lg:grid-cols-2 lg:gap-y-4.5",
+            "2xl:grid-cols-3",
+          )}
+        >
           <TechnologyCard
             icon={<TechnologyIcon name="jest" />}
             name="Jest"
@@ -154,58 +195,74 @@ export default function TechnologiesList() {
 
       {/*Accessibility*/}
       <div className="mb-8">
-        <h3 className="text-slate-800 font-bold text-xl mb-4">Accessibility</h3>
+        <h3 className={clsx("mb-4 text-slate-800 font-bold text-xl")}>
+          Accessibility
+        </h3>
 
-        <div className="mb-8">
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-y-4.5 2xl:grid-cols-3">
-            <TechnologyCard
-              icon={<TechnologyIcon name="nvda" />}
-              name="NVDA"
-              description="Open-source screen reader for Windows"
-              link="https://www.nvaccess.org/"
-            />
-          </div>
+        <div
+          className={clsx(
+            "grid grid-cols-1 gap-4",
+            "lg:grid-cols-2 lg:gap-y-4.5",
+            "2xl:grid-cols-3",
+          )}
+        >
+          <TechnologyCard
+            icon={<TechnologyIcon name="nvda" />}
+            name="NVDA"
+            description="Open-source screen reader for Windows"
+            link="https://www.nvaccess.org/"
+          />
         </div>
       </div>
 
       {/*Version control and CI/CD*/}
       <div className="mb-8">
-        <h3 className="text-slate-800 font-bold text-xl mb-4">
+        <h3 className={clsx("mb-4 text-slate-800 font-bold text-xl")}>
           Version control and CI/CD
         </h3>
 
-        <div className="mb-8">
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-y-4.5 2xl:grid-cols-3">
-            <TechnologyCard
-              icon={<TechnologyIcon name="git_hub" />}
-              name="Git Hub"
-              description="Version control system for tracking code changes and managing project history"
-              link="https://github.com/"
-            />
+        <div
+          className={clsx(
+            "grid grid-cols-1 gap-4",
+            "lg:grid-cols-2 lg:gap-y-4.5",
+            "2xl:grid-cols-3",
+          )}
+        >
+          <TechnologyCard
+            icon={<TechnologyIcon name="git_hub" />}
+            name="Git Hub"
+            description="Version control system for tracking code changes and managing project history"
+            link="https://github.com/"
+          />
 
-            <TechnologyCard
-              icon={<TechnologyIcon name="git_hub_actions" />}
-              name="Git Hub Actions"
-              description="CI/CD platform built into GitHub that automates workflows on every push or pull request"
-              link="https://github.com/features/actions"
-            />
-          </div>
+          <TechnologyCard
+            icon={<TechnologyIcon name="git_hub_actions" />}
+            name="Git Hub Actions"
+            description="CI/CD platform built into GitHub that automates workflows on every push or pull request"
+            link="https://github.com/features/actions"
+          />
         </div>
       </div>
 
       {/*Design*/}
-      <div>
-        <h3 className="text-slate-800 font-bold text-xl mb-4">Design</h3>
+      <div className="mb-8">
+        <h3 className={clsx("mb-4 text-slate-800 font-bold text-xl")}>
+          Design
+        </h3>
 
-        <div className="mb-8">
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-y-4.5 2xl:grid-cols-3">
-            <TechnologyCard
-              icon={<TechnologyIcon name="figma" />}
-              name="Figma"
-              description="UI design and prototyping tool used to create wireframes, mockups, and design systems collaboratively"
-              link="https://www.figma.com/"
-            />
-          </div>
+        <div
+          className={clsx(
+            "grid grid-cols-1 gap-4",
+            "lg:grid-cols-2 lg:gap-y-4.5",
+            "2xl:grid-cols-3",
+          )}
+        >
+          <TechnologyCard
+            icon={<TechnologyIcon name="figma" />}
+            name="Figma"
+            description="UI design and prototyping tool used to create wireframes, mockups, and design systems collaboratively"
+            link="https://www.figma.com/"
+          />
         </div>
       </div>
     </div>
