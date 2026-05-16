@@ -1,26 +1,8 @@
 import { ReactNode } from "react";
 
-/**
- * Union of valid technology names
- */
-export type TechnologyName =
-  | "api"
-  | "css"
-  | "figma"
-  | "git_hub"
-  | "git_hub_actions"
-  | "hero_icons"
-  | "html"
-  | "jest"
-  | "nextjs"
-  | "nvda"
-  | "playwright"
-  | "react"
-  | "react_icons"
-  | "react_testing_library"
-  | "redux_toolkit"
-  | "tailwind_css"
-  | "typescript";
+/* ---------------------------------------------------- */
+/* Components Props types                               */
+/* ---------------------------------------------------- */
 
 /**
  * Props for the Card component
@@ -50,13 +32,13 @@ export type CardListProps = {
 
 /**
  * Props for the TechnologyCard component
- * @property icon        - icon representing the technology
+ * @property iconName    - icon representing the technology
  * @property name        - name
  * @property description - description of the purpose of the technology
  * @property link        - technology website
  */
 export type TechnologyCardProps = {
-  icon: ReactNode;
+  iconName: TechnologyName;
   name: string;
   description: string;
   link: string;
@@ -78,4 +60,54 @@ export type LinkButtonProps = {
  */
 export type TechnologyProps = {
   name: TechnologyName;
+};
+
+/* ---------------------------------------------------- */
+/* Other component related types                        */
+/* ---------------------------------------------------- */
+
+/**
+ * Union of valid technology names
+ */
+export type TechnologyName =
+  | "api"
+  | "css"
+  | "figma"
+  | "git_hub"
+  | "git_hub_actions"
+  | "hero_icons"
+  | "html"
+  | "jest"
+  | "nextjs"
+  | "nvda"
+  | "playwright"
+  | "react"
+  | "react_icons"
+  | "react_testing_library"
+  | "redux_toolkit"
+  | "tailwind_css"
+  | "typescript";
+
+/**
+ * Union of valid technology category names
+ */
+export type TechnologyCategory =
+  | "Framework"
+  | "Markup and Styling"
+  | "Programming Language"
+  | "Libraries"
+  | "State Management"
+  | "Testing Frameworks and Libraries"
+  | "Accessibility"
+  | "Version control and CI/CD"
+  | "Design";
+
+/**
+ * Type for the technology data
+ * @property category     - technology category
+ * @property technologies - technologies list
+ */
+export type TechnologyData = {
+  category: TechnologyCategory;
+  technologies: TechnologyCardProps[];
 };
