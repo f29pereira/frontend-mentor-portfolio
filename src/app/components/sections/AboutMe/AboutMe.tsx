@@ -47,24 +47,37 @@ export default function AboutMe() {
 
       {/*Download CV link*/}
       <div
-        className={clsx("flex justify-center items-center mt-8", "md:mt-10")}
+        className={clsx(
+          "flex justify-center items-center mt-8",
+          "sm:mt-12",
+          "xl:mt-16",
+        )}
       >
         <a
           className={clsx(
             "block px-8 py-4",
             "bg-indigo-600 shadow-lg shadow-indigo-500/50",
             "text-center text-white font-bold",
-            "cursor-pointer rounded-xl",
-            "md:hover:bg-indigo-500",
+            "cursor-pointer rounded-full",
+            "md:px-10 md:py-6 md:hover:bg-indigo-500",
           )}
           aria-label="Dowload my CV as PDF"
           href="cv/CV_Filipe_Pereira.pdf"
           target="_blank"
           download
         >
-          <div className={clsx("flex justify-center items-center gap-4")}>
-            <FaFileDownload className="text-xl lg:text-2xl" />
-            <span className="lg:text-lg">Download my CV</span>
+          <div
+            className={clsx(
+              "flex justify-center items-center gap-4",
+              "lg:gap-6",
+            )}
+          >
+            <FaFileDownload
+              className={clsx("text-xl", "md:text-2xl", "xl:text-3xl")}
+            />
+            <span className={clsx("md:text-lg", "lg:text-xl", "xl:text-xl")}>
+              Download my CV
+            </span>
           </div>
         </a>
       </div>
