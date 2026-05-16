@@ -25,7 +25,7 @@ export default function Technology() {
         These are the technologies I used across my Frontend Mentor challenges:
       </p>
 
-      <div className={clsx("flex justify-center mt-8", "md:mt-10")}>
+      <div className={clsx("flex justify-center mt-8", "sm:mt-10")}>
         <TechnologiesList />
       </div>
     </section>
