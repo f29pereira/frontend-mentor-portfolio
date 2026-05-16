@@ -1,21 +1,11 @@
-import type { CardProps } from "../types";
+import type { CardProps, TechnologyData } from "../types";
 
-//List of Card components data
+// List of Card components data
 export const cardList: CardProps[] = [
   {
     imageSrc: "images/cards/sneakers.png",
     imageAlt: "Sneakers Challenge",
     cardTitle: "Sneakers",
-    technologies: [
-      "nextjs",
-      "react",
-      "redux_toolkit",
-      "typescript",
-      "html",
-      "css",
-      "jest",
-      "react_testing_library",
-    ],
     cardDescription:
       "E-commerce product page with product info and user shopping cart.",
     demoLink: "https://f29pereira.github.io/sneakers/",
@@ -25,17 +15,6 @@ export const cardList: CardProps[] = [
     imageSrc: "images/cards/shortly.png",
     imageAlt: "Shortly Challenge",
     cardTitle: "Shortly",
-    technologies: [
-      "nextjs",
-      "react",
-      "redux_toolkit",
-      "typescript",
-      "html",
-      "css",
-      "api",
-      "jest",
-      "react_testing_library",
-    ],
     cardDescription: "URL shortening landing page using the Clean URI API.",
     demoLink: "https://f29pereira.github.io/shortly/",
     codeLink: "https://github.com/f29pereira/shortly",
@@ -44,15 +23,6 @@ export const cardList: CardProps[] = [
     imageSrc: "images/cards/conference_ticket_generator.png",
     imageAlt: "Conference Ticket Generator Challenge",
     cardTitle: "Conference Ticket Generator",
-    technologies: [
-      "nextjs",
-      "react",
-      "typescript",
-      "html",
-      "css",
-      "jest",
-      "react_testing_library",
-    ],
     cardDescription:
       "Form with validation that generates a styled conference ticket.",
     demoLink: "https://f29pereira.github.io/conference-ticket-generator/",
@@ -62,17 +32,6 @@ export const cardList: CardProps[] = [
     imageSrc: "images/cards/weather_now.png",
     imageAlt: "Weather App challenge Challenge",
     cardTitle: "Weather Now",
-    technologies: [
-      "nextjs",
-      "react",
-      "typescript",
-      "html",
-      "css",
-      "figma",
-      "api",
-      "jest",
-      "react_testing_library",
-    ],
     cardDescription:
       "App with search functionality, unit conversion, and forecasts using the Open-Meteo API.",
     demoLink: "https://f29pereira.github.io/weather-app/",
@@ -82,7 +41,6 @@ export const cardList: CardProps[] = [
     imageSrc: "images/cards/fylo.png",
     imageAlt: "Fylo Landing Page Challenge",
     cardTitle: "Fylo landing page",
-    technologies: ["nextjs", "react", "typescript", "html", "css"],
     cardDescription:
       "A dark-themed landing page design for Fylo, a cloud storage service.",
     demoLink: "https://f29pereira.github.io/fylo/",
@@ -92,7 +50,6 @@ export const cardList: CardProps[] = [
     imageSrc: "images/cards/bento_grid.png",
     imageAlt: "Bento Grid Challenge",
     cardTitle: "Bento Grid",
-    technologies: ["nextjs", "react", "html", "css"],
     cardDescription: "Responsive bento-style grid layout.",
     demoLink: "https://f29pereira.github.io/bento-grid/",
     codeLink: "https://github.com/f29pereira/bento-grid",
@@ -101,10 +58,167 @@ export const cardList: CardProps[] = [
     imageSrc: "images/cards/order_summary.png",
     imageAlt: "Order Summary Challenge",
     cardTitle: "Order Summary",
-    technologies: ["nextjs", "react", "typescript", "html", "css"],
     cardDescription:
       "Order summary card component for music subscription plan.",
     demoLink: "https://f29pereira.github.io/order-summary/",
     codeLink: "https://github.com/f29pereira/order-summary",
   },
 ];
+
+/**
+ * Returns the list of technologies
+ */
+export const getTechnologiesList = (): TechnologyData[] => {
+  return [
+    {
+      category: "Framework",
+      technologies: [
+        {
+          iconName: "nextjs",
+          name: "Next.js",
+          description:
+            "React framework for building full-stack web applications",
+          link: "https://nextjs.org/",
+        },
+      ],
+    },
+    {
+      category: "Markup and Styling",
+      technologies: [
+        {
+          iconName: "html",
+          name: "HTML",
+          description:
+            "Markup language for documents displayed in a web browser",
+          link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        },
+        {
+          iconName: "css",
+          name: "CSS",
+          description:
+            "Specifies the presentation/styling of a document written in a markup language",
+          link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        },
+        {
+          iconName: "tailwind_css",
+          name: "Tailwind CSS",
+          description:
+            "CSS framework allows to build custom designs without leaving the HTML",
+          link: "https://tailwindcss.com/",
+        },
+      ],
+    },
+    {
+      category: "Programming Language",
+      technologies: [
+        {
+          iconName: "typescript",
+          name: "Typescript",
+          description:
+            "Strongly typed PL that builds on JavaScript, giving better tooling at any scale",
+          link: "https://www.typescriptlang.org/",
+        },
+      ],
+    },
+    {
+      category: "Libraries",
+      technologies: [
+        {
+          iconName: "react",
+          name: "React",
+          description: "JavaScript library for web and native UIs",
+          link: "https://react.dev/",
+        },
+        {
+          iconName: "react_icons",
+          name: "React Icons",
+          description: "Bundles popular icon sets as React components",
+          link: "https://react-icons.github.io/react-icons/",
+        },
+        {
+          iconName: "hero_icons",
+          name: "Hero Icons",
+          description: "SVG icons",
+          link: "https://heroicons.com/",
+        },
+      ],
+    },
+    {
+      category: "State Management",
+      technologies: [
+        {
+          iconName: "redux_toolkit",
+          name: "Redux Toolkit",
+          description:
+            "manage global app state with Redux, with less boilerplate.",
+          link: "https://redux-toolkit.js.org/",
+        },
+      ],
+    },
+    {
+      category: "Testing Frameworks and Libraries",
+      technologies: [
+        {
+          iconName: "jest",
+          name: "Jest",
+          description: "JavaScript testing framework",
+          link: "http://jestjs.io/",
+        },
+        {
+          iconName: "react_testing_library",
+          name: "React Testing Library",
+          description: "React components testing library",
+          link: "https://testing-library.com/",
+        },
+        {
+          iconName: "playwright",
+          name: "Playwright",
+          description: "Automation library for E2E testing",
+          link: "https://playwright.dev/",
+        },
+      ],
+    },
+    {
+      category: "Accessibility",
+      technologies: [
+        {
+          iconName: "nvda",
+          name: "NVDA",
+          description: "Open-source screen reader for Windows",
+          link: "https://www.nvaccess.org/",
+        },
+      ],
+    },
+    {
+      category: "Version control and CI/CD",
+      technologies: [
+        {
+          iconName: "git_hub",
+          name: "Git Hub",
+          description:
+            "Version control system for tracking code changes and managing project history",
+          link: "https://github.com/",
+        },
+        {
+          iconName: "git_hub_actions",
+          name: "Git Hub Actions",
+          description:
+            "CI/CD platform built into GitHub that automates workflows on every push or pull request",
+          link: "https://github.com/features/actions",
+        },
+      ],
+    },
+    {
+      category: "Design",
+      technologies: [
+        {
+          iconName: "figma",
+          name: "Figma",
+          description:
+            "UI design and prototyping tool used to create wireframes, mockups, and design systems collaboratively",
+          link: "https://www.figma.com/",
+        },
+      ],
+    },
+  ];
+};
