@@ -84,9 +84,11 @@ export type TechnologyName =
   | "nvda"
   | "playwright"
   | "react"
+  | "react_dev_tools"
   | "react_icons"
   | "react_testing_library"
   | "redux_toolkit"
+  | "redux_dev_tools"
   | "tailwind_css"
   | "typescript";
 
@@ -99,6 +101,7 @@ export type TechnologyCategory =
   | "Programming Language"
   | "Libraries"
   | "State Management"
+  | "Browser Extensions"
   | "Testing Frameworks and Libraries"
   | "Accessibility"
   | "Version control and CI/CD"

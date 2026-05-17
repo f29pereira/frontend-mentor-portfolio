@@ -169,6 +169,25 @@ export const getTechnologiesList = (): TechnologyData[] => {
       ],
     },
     {
+      category: "Browser Extensions",
+      technologies: [
+        {
+          iconName: "react_dev_tools",
+          name: "React Developer Tools",
+          description:
+            "Extension for inspecting the React component tree and debugging props and state",
+          link: "https://react.dev/learn/react-developer-tools",
+        },
+        {
+          iconName: "redux_dev_tools",
+          name: "Redux Developer Tools",
+          description:
+            "Extension for tracking Redux state changes and replaying actions during debugging",
+          link: "https://github.com/reduxjs/redux-devtools",
+        },
+      ],
+    },
+    {
       category: "Testing Frameworks and Libraries",
       technologies: [
         {

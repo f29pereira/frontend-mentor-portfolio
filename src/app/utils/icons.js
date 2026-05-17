@@ -25,6 +25,7 @@ import { TbBrandRedux } from "react-icons/tb";
 import { SiGithubactions } from "react-icons/si";
 import { IoLogoGithub } from "react-icons/io";
 import { IoLibrary } from "react-icons/io5";
+import { MdExtension } from "react-icons/md";
 
 export {
   /*Logos*/
@@ -49,4 +50,5 @@ export {
   FaCode /*code*/,
   FaFileDownload /*download file*/,
   IoLibrary /*Library*/,
+  MdExtension /*Extension*/,
 };

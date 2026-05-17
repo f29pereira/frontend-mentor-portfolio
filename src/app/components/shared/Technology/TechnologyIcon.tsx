@@ -13,6 +13,7 @@ import {
   SiGithubactions,
   IoLogoGithub,
   IoLibrary,
+  MdExtension,
 } from "@/app/utils/icons";
 import { ReactNode } from "react";
 import Figma from "../../ui/Icons/Figma/Figma";
@@ -56,6 +57,9 @@ export default function TechnologyIcon({ name }: TechnologyProps) {
         return <Playwright />;
       case "react":
         return <FaReact />;
+      case "react_dev_tools":
+      case "redux_dev_tools":
+        return <MdExtension />;
       case "react_icons":
         return <ReactIcons />;
       case "react_testing_library":
