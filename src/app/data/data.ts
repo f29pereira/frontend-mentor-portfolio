@@ -130,6 +130,19 @@ export const getTechnologiesList = (): TechnologyData[] => {
           link: "https://react.dev/",
         },
         {
+          iconName: "clsx",
+          name: "Clsx",
+          description:
+            "Utility for constructing className strings conditionally",
+          link: "https://www.npmjs.com/package/clsx",
+        },
+        {
+          iconName: "focus_trap_react",
+          name: "focus_trap_react",
+          description: "React component that traps focus",
+          link: "https://www.npmjs.com/package/focus-trap-react",
+        },
+        {
           iconName: "react_icons",
           name: "React Icons",
           description: "Bundles popular icon sets as React components",

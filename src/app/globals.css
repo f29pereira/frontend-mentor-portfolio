@@ -12,7 +12,9 @@
 :root {
   /*Technologies colors*/
   --color-api: #10b981;
+  --color-clsx: #237bdf;
   --color-css: #1572b6;
+  --color-focus_trap_react: #237bdf;
   --color-git_hub: #181717;
   --color-git_hub_actions: #2088ff;
   --color-html: #e34f26;

@@ -24,6 +24,7 @@ import { AiOutlineApi } from "react-icons/ai";
 import { TbBrandRedux } from "react-icons/tb";
 import { SiGithubactions } from "react-icons/si";
 import { IoLogoGithub } from "react-icons/io";
+import { IoLibrary } from "react-icons/io5";
 
 export {
   /*Logos*/
@@ -47,4 +48,5 @@ export {
   FiExternalLink /*link*/,
   FaCode /*code*/,
   FaFileDownload /*download file*/,
+  IoLibrary /*Library*/,
 };

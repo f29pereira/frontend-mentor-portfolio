@@ -72,7 +72,9 @@ export type TechnologyProps = {
 export type TechnologyName =
   | "api"
   | "css"
+  | "clsx"
   | "figma"
+  | "focus_trap_react"
   | "git_hub"
   | "git_hub_actions"
   | "hero_icons"

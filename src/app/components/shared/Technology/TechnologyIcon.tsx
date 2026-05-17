@@ -12,6 +12,7 @@ import {
   TbBrandRedux,
   SiGithubactions,
   IoLogoGithub,
+  IoLibrary,
 } from "@/app/utils/icons";
 import { ReactNode } from "react";
 import Figma from "../../ui/Icons/Figma/Figma";
@@ -65,6 +66,9 @@ export default function TechnologyIcon({ name }: TechnologyProps) {
         return <SiTailwindcss />;
       case "typescript":
         return <SiTypescript />;
+      case "clsx":
+      case "focus_trap_react":
+        return <IoLibrary />;
       default:
         return techName;
     }
