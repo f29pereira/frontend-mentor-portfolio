@@ -10,6 +10,7 @@ import {
   FaCode,
   FaFigma,
   FaFileDownload,
+  FaNode,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -43,8 +44,9 @@ export {
   SiJest /*Jest*/,
   SiTestinglibrary /*React Testing Library*/,
   TbBrandRedux /*Redux Toolkit*/,
-  IoLogoGithub /*GitHub logo*/,
+  IoLogoGithub /*GitHub*/,
   SiGithubactions /*GitHub actions*/,
+  FaNode /*Node.js*/,
   /*Other*/
   FiExternalLink /*link*/,
   FaCode /*code*/,

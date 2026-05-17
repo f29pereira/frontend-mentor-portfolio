@@ -121,6 +121,18 @@ export const getTechnologiesList = (): TechnologyData[] => {
       ],
     },
     {
+      category: "Runtime",
+      technologies: [
+        {
+          iconName: "nodejs",
+          name: "Node.js",
+          description:
+            "Cross-platform JS runtime environment that lets developers create servers, web apps, command line tools and scripts",
+          link: "https://nodejs.org/en",
+        },
+      ],
+    },
+    {
       category: "Libraries",
       technologies: [
         {

@@ -14,6 +14,7 @@ import {
   IoLogoGithub,
   IoLibrary,
   MdExtension,
+  FaNode,
 } from "@/app/utils/icons";
 import { ReactNode } from "react";
 import Figma from "../../ui/Icons/Figma/Figma";
@@ -51,6 +52,8 @@ export default function TechnologyIcon({ name }: TechnologyProps) {
         return <SiJest />;
       case "nextjs":
         return <RiNextjsFill />;
+      case "nodejs":
+        return <FaNode />;
       case "nvda":
         return <NVDA />;
       case "playwright":
