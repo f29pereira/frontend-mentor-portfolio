@@ -151,7 +151,7 @@ export const getTechnologiesList = (): TechnologyData[] => {
         {
           iconName: "hero_icons",
           name: "Hero Icons",
-          description: "SVG icons",
+          description: "SVG icons by the makers of Tailwind CSS",
           link: "https://heroicons.com/",
         },
       ],
