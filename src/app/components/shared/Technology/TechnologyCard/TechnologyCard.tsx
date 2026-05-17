@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import type { TechnologyCardProps } from "@/app/types";
-import TechnologyIcon from "../TechnologyIcon";
+import TechnologyIcon from "../TechnologyIcon/TechnologyIcon";
 import { FiExternalLink } from "@/app/utils/icons";
 
 /**

@@ -17,11 +17,11 @@ import {
   FaNode,
 } from "@/app/utils/icons";
 import { ReactNode } from "react";
-import Figma from "../../ui/Icons/Figma/Figma";
-import HeroIcons from "../../ui/Icons/HeroIcons/HeroIcons";
-import NVDA from "../../ui/Icons/NVDA/NVDA";
-import Playwright from "../../ui/Icons/Playwright/Playwright";
-import ReactIcons from "../../ui/Icons/ReactIcons/ReactIcons";
+import Figma from "@/app/components/ui/Icons/Figma/Figma";
+import HeroIcons from "@/app/components/ui/Icons/HeroIcons/HeroIcons";
+import NVDA from "@/app/components/ui/Icons/NVDA/NVDA";
+import Playwright from "@/app/components/ui/Icons/Playwright/Playwright";
+import ReactIcons from "@/app/components/ui/Icons/ReactIcons/ReactIcons";
 
 /**
  * Renders technology icon with associated color
