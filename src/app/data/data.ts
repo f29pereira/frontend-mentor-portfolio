@@ -181,7 +181,7 @@ export const getTechnologiesList = (): TechnologyData[] => {
       ],
     },
     {
-      category: "Browser Extensions",
+      category: "Developer Tools",
       technologies: [
         {
           iconName: "react_dev_tools",
@@ -196,6 +196,13 @@ export const getTechnologiesList = (): TechnologyData[] => {
           description:
             "Extension for tracking Redux state changes and replaying actions during debugging",
           link: "https://github.com/reduxjs/redux-devtools",
+        },
+        {
+          iconName: "lighthouse",
+          name: "Lighthouse",
+          description:
+            "Creates audits for performance, accessibility, progressive web apps, SEO, and more. ",
+          link: "https://developer.chrome.com/docs/lighthouse",
         },
       ],
     },

@@ -22,6 +22,7 @@ import HeroIcons from "@/app/components/ui/Icons/HeroIcons/HeroIcons";
 import NVDA from "@/app/components/ui/Icons/NVDA/NVDA";
 import Playwright from "@/app/components/ui/Icons/Playwright/Playwright";
 import ReactIcons from "@/app/components/ui/Icons/ReactIcons/ReactIcons";
+import Lighthouse from "@/app/components/ui/Icons/Lighthouse/Lighthouse";
 
 /**
  * Renders technology icon with associated color
@@ -50,6 +51,8 @@ export default function TechnologyIcon({ name }: TechnologyProps) {
         return <FaHtml5 />;
       case "jest":
         return <SiJest />;
+      case "lighthouse":
+        return <Lighthouse />;
       case "nextjs":
         return <RiNextjsFill />;
       case "nodejs":
