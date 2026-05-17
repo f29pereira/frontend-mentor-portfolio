@@ -51,6 +51,7 @@ export default function AboutMe() {
           "flex justify-center items-center mt-8",
           "sm:mt-12",
           "xl:mt-16",
+          "3xl:mt-20",
         )}
       >
         <a
