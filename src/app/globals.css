@@ -1,17 +1,36 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1800px;
+}
+
 :root {
   /*Technologies colors*/
-  --color-nextjs: #000000;
-  --color-react: #61dafb;
-  --color-typescript: #3178c6;
-  --color-html: #e34f26;
-  --color-css: #1572b6;
+  --default-library: #237bdf;
+  --default-browser-extension: #df4923;
+
   --color-api: #10b981;
-  --color-figma: #1abcfe;
+  --color-clsx: var(--default-library);
+  --color-css: #1572b6;
+  --color-focus_trap_react: var(--default-library);
+  --color-git_hub: #181717;
+  --color-git_hub_actions: #2088ff;
+  --color-html: #e34f26;
   --color-jest: #99425b;
+  --color-nextjs: #000000;
+  --color-nodejs: #539e43;
+  --color-react: #61dafb;
+  --color-react_dev_tools: var(--default-browser-extension);
   --color-react_testing_library: #e93737;
   --color-redux_toolkit: #764abc;
+  --color-redux_dev_tools: var(--default-browser-extension);
+  --color-tailwind_css: #38bdf8;
+  --color-typescript: #3178c6;
 }
 
 body {
