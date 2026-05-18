@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import ChallengesList from "../../shared/Cards/ChallengesList/ChallengesList";
+import ChallengesList from "../../shared/Challenge/ChallengesList/ChallengesList";
 
 /**
  * Renders the Challenge section with:

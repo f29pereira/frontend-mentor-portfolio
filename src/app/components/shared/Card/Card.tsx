@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import type { CardProps } from "@/app/types";
 import Image from "next/image";
-import LinkButton from "../../../ui/LinkButton/LinkButton";
+import LinkButton from "../../ui/LinkButton/LinkButton";
 import { FiExternalLink, IoLogoGithub } from "@/app/utils/icons";
 
 /**

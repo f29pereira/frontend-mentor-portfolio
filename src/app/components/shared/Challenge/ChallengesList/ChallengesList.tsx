@@ -1,7 +1,7 @@
 "use client"; // Client Component
 import clsx from "clsx";
 import type { CardProps } from "@/app/types";
-import Card from "../Card/Card";
+import Card from "../../Card/Card";
 import ChallengeFilterButton from "../../ChallengeFilter/ChallengeFilterButton/ChallengeFilterButton";
 import { useChallenge } from "@/app/components/customHooks/useChallenge";
 
