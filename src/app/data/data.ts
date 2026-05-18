@@ -1,9 +1,9 @@
-import type { CardData, TechnologyData } from "../types";
+import type { ChallengeData, TechnologyData } from "../types";
 
 /**
  * Returns the list of challenges
  */
-export const getChallengesList = (): CardData[] => {
+export const getChallengesList = (): ChallengeData[] => {
   return [
     {
       imageSrc: "images/cards/sneakers.png",

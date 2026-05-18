@@ -14,7 +14,7 @@ export type ReactChildrenProp = {
 /**
  * Props for the Card component
  */
-export type CardProps = CardData & {};
+export type CardProps = ChallengeData & {};
 
 /**
  * Props for the TechnologyCard component
@@ -58,8 +58,8 @@ export type TechnologyProps = {
  * @property setChallenges - challenges state setter
  */
 export type ChallengeContextType = {
-  challenges: CardData[];
-  setChallenges: Dispatch<SetStateAction<CardData[]>>;
+  challenges: ChallengeData[];
+  setChallenges: Dispatch<SetStateAction<ChallengeData[]>>;
 };
 
 /* ---------------------------------------------------- */
@@ -75,7 +75,7 @@ export type ChallengeContextType = {
  * @property demoLink        - link URL for the "Live Demo" button
  * @property codeLink        - link URL for the "View Code" button
  */
-export type CardData = {
+export type ChallengeData = {
   imageSrc: string;
   imageAlt: string;
   cardTitle: string;
