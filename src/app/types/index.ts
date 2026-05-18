@@ -6,21 +6,8 @@ import { ReactNode } from "react";
 
 /**
  * Props for the Card component
- * @property imageSrc        - URL of image displayed at the top
- * @property imageAlt        - alt text for the image
- * @property cardTitle       - title of the card
- * @property cardDescription - description of the card
- * @property demoLink        - link URL for the "Live Demo" button
- * @property codeLink        - link URL for the "View Code" button
  */
-export type CardProps = {
-  imageSrc: string;
-  imageAlt: string;
-  cardTitle: string;
-  cardDescription: string;
-  demoLink: string;
-  codeLink: string;
-};
+export type CardProps = CardData & {};
 
 /**
  * Props for the CardList component
@@ -65,6 +52,24 @@ export type TechnologyProps = {
 /* ---------------------------------------------------- */
 /* Other component related types                        */
 /* ---------------------------------------------------- */
+
+/**
+ * Props for the Card component
+ * @property imageSrc        - URL of image displayed at the top
+ * @property imageAlt        - alt text for the image
+ * @property cardTitle       - title of the card
+ * @property cardDescription - description of the card
+ * @property demoLink        - link URL for the "Live Demo" button
+ * @property codeLink        - link URL for the "View Code" button
+ */
+export type CardData = {
+  imageSrc: string;
+  imageAlt: string;
+  cardTitle: string;
+  cardDescription: string;
+  demoLink: string;
+  codeLink: string;
+};
 
 /**
  * Union of valid technology names

@@ -1,69 +1,73 @@
-import type { CardProps, TechnologyData } from "../types";
+import type { CardData, TechnologyData } from "../types";
 
-// List of Card components data
-export const cardList: CardProps[] = [
-  {
-    imageSrc: "images/cards/sneakers.png",
-    imageAlt: "Sneakers Challenge",
-    cardTitle: "Sneakers",
-    cardDescription:
-      "E-commerce product page with product info and user shopping cart.",
-    demoLink: "https://f29pereira.github.io/sneakers/",
-    codeLink: "https://github.com/f29pereira/sneakers",
-  },
-  {
-    imageSrc: "images/cards/shortly.png",
-    imageAlt: "Shortly Challenge",
-    cardTitle: "Shortly",
-    cardDescription: "URL shortening landing page using the Clean URI API.",
-    demoLink: "https://f29pereira.github.io/shortly/",
-    codeLink: "https://github.com/f29pereira/shortly",
-  },
-  {
-    imageSrc: "images/cards/conference_ticket_generator.png",
-    imageAlt: "Conference Ticket Generator Challenge",
-    cardTitle: "Conference Ticket Generator",
-    cardDescription:
-      "Form with validation that generates a styled conference ticket.",
-    demoLink: "https://f29pereira.github.io/conference-ticket-generator/",
-    codeLink: "https://github.com/f29pereira/conference-ticket-generator",
-  },
-  {
-    imageSrc: "images/cards/weather_now.png",
-    imageAlt: "Weather App challenge Challenge",
-    cardTitle: "Weather Now",
-    cardDescription:
-      "App with search functionality, unit conversion, and forecasts using the Open-Meteo API.",
-    demoLink: "https://f29pereira.github.io/weather-app/",
-    codeLink: "https://github.com/f29pereira/weather-app",
-  },
-  {
-    imageSrc: "images/cards/fylo.png",
-    imageAlt: "Fylo Landing Page Challenge",
-    cardTitle: "Fylo landing page",
-    cardDescription:
-      "A dark-themed landing page design for Fylo, a cloud storage service.",
-    demoLink: "https://f29pereira.github.io/fylo/",
-    codeLink: "https://github.com/f29pereira/fylo",
-  },
-  {
-    imageSrc: "images/cards/bento_grid.png",
-    imageAlt: "Bento Grid Challenge",
-    cardTitle: "Bento Grid",
-    cardDescription: "Responsive bento-style grid layout.",
-    demoLink: "https://f29pereira.github.io/bento-grid/",
-    codeLink: "https://github.com/f29pereira/bento-grid",
-  },
-  {
-    imageSrc: "images/cards/order_summary.png",
-    imageAlt: "Order Summary Challenge",
-    cardTitle: "Order Summary",
-    cardDescription:
-      "Order summary card component for music subscription plan.",
-    demoLink: "https://f29pereira.github.io/order-summary/",
-    codeLink: "https://github.com/f29pereira/order-summary",
-  },
-];
+/**
+ * Returns the list of challenges
+ */
+export const getChallengesList = (): CardData[] => {
+  return [
+    {
+      imageSrc: "images/cards/sneakers.png",
+      imageAlt: "Sneakers Challenge",
+      cardTitle: "Sneakers",
+      cardDescription:
+        "E-commerce product page with product info and user shopping cart.",
+      demoLink: "https://f29pereira.github.io/sneakers/",
+      codeLink: "https://github.com/f29pereira/sneakers",
+    },
+    {
+      imageSrc: "images/cards/shortly.png",
+      imageAlt: "Shortly Challenge",
+      cardTitle: "Shortly",
+      cardDescription: "URL shortening landing page using the Clean URI API.",
+      demoLink: "https://f29pereira.github.io/shortly/",
+      codeLink: "https://github.com/f29pereira/shortly",
+    },
+    {
+      imageSrc: "images/cards/conference_ticket_generator.png",
+      imageAlt: "Conference Ticket Generator Challenge",
+      cardTitle: "Conference Ticket Generator",
+      cardDescription:
+        "Form with validation that generates a styled conference ticket.",
+      demoLink: "https://f29pereira.github.io/conference-ticket-generator/",
+      codeLink: "https://github.com/f29pereira/conference-ticket-generator",
+    },
+    {
+      imageSrc: "images/cards/weather_now.png",
+      imageAlt: "Weather App challenge Challenge",
+      cardTitle: "Weather Now",
+      cardDescription:
+        "App with search functionality, unit conversion, and forecasts using the Open-Meteo API.",
+      demoLink: "https://f29pereira.github.io/weather-app/",
+      codeLink: "https://github.com/f29pereira/weather-app",
+    },
+    {
+      imageSrc: "images/cards/fylo.png",
+      imageAlt: "Fylo Landing Page Challenge",
+      cardTitle: "Fylo landing page",
+      cardDescription:
+        "A dark-themed landing page design for Fylo, a cloud storage service.",
+      demoLink: "https://f29pereira.github.io/fylo/",
+      codeLink: "https://github.com/f29pereira/fylo",
+    },
+    {
+      imageSrc: "images/cards/bento_grid.png",
+      imageAlt: "Bento Grid Challenge",
+      cardTitle: "Bento Grid",
+      cardDescription: "Responsive bento-style grid layout.",
+      demoLink: "https://f29pereira.github.io/bento-grid/",
+      codeLink: "https://github.com/f29pereira/bento-grid",
+    },
+    {
+      imageSrc: "images/cards/order_summary.png",
+      imageAlt: "Order Summary Challenge",
+      cardTitle: "Order Summary",
+      cardDescription:
+        "Order summary card component for music subscription plan.",
+      demoLink: "https://f29pereira.github.io/order-summary/",
+      codeLink: "https://github.com/f29pereira/order-summary",
+    },
+  ];
+};
 
 /**
  * Returns the list of technologies

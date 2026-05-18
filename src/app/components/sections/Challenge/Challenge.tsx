@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import CardList from "../../shared/Cards/CardList/CardList";
-import { cardList } from "@/app/data/data";
+import { getChallengesList } from "@/app/data/data";
 
 /**
  * Renders the Challenge section with:
@@ -9,6 +9,8 @@ import { cardList } from "@/app/data/data";
  * - list of challenges
  */
 export default function Challenge() {
+  const challengesList = getChallengesList();
+
   return (
     <section className={clsx("mb-20", "sm:mb-32")}>
       {/*Title*/}
@@ -38,7 +40,7 @@ export default function Challenge() {
 
       {/*List of challenges*/}
       <div className={clsx("flex justify-center mt-8", "xl:mt-16")}>
-        <CardList cardList={cardList} />
+        <CardList cardList={challengesList} />
       </div>
     </section>
   );
