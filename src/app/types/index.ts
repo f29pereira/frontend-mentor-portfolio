@@ -1,21 +1,20 @@
-import { ReactNode } from "react";
+import { ReactNode, Dispatch, SetStateAction } from "react";
 
 /* ---------------------------------------------------- */
 /* Components Props types                               */
 /* ---------------------------------------------------- */
 
 /**
+ * Type for React children
+ */
+export type ReactChildrenProp = {
+  children: ReactNode;
+};
+
+/**
  * Props for the Card component
  */
 export type CardProps = CardData & {};
-
-/**
- * Props for the CardList component
- * @property cardList - list of Card components
- */
-export type CardListProps = {
-  cardList: CardProps[];
-};
 
 /**
  * Props for the TechnologyCard component
@@ -50,11 +49,25 @@ export type TechnologyProps = {
 };
 
 /* ---------------------------------------------------- */
+/* Context Provider related types                       */
+/* ---------------------------------------------------- */
+
+/**
+ * Type for the ChallengeContext
+ * @property challenges    - list of challenges state
+ * @property setChallenges - challenges state setter
+ */
+export type ChallengeContextType = {
+  challenges: CardData[];
+  setChallenges: Dispatch<SetStateAction<CardData[]>>;
+};
+
+/* ---------------------------------------------------- */
 /* Other component related types                        */
 /* ---------------------------------------------------- */
 
 /**
- * Props for the Card component
+ * Type for the card data
  * @property imageSrc        - URL of image displayed at the top
  * @property imageAlt        - alt text for the image
  * @property cardTitle       - title of the card
