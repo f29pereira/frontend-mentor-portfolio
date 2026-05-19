@@ -17,6 +17,13 @@ export type ReactChildrenProp = {
 export type CardProps = ChallengeData & {};
 
 /**
+ * Props for the Difficulty component
+ */
+export type DifficultyProps = {
+  difficulty: ChallengeDifficulty;
+};
+
+/**
  * Props for the TechnologyCard component
  * @property iconName    - icon representing the technology
  * @property name        - name
@@ -67,13 +74,14 @@ export type ChallengeContextType = {
 /* ---------------------------------------------------- */
 
 /**
- * Type for the card data
+ * Type for the challenge data
  * @property imageSrc        - URL of image displayed at the top
  * @property imageAlt        - alt text for the image
  * @property cardTitle       - title of the card
  * @property cardDescription - description of the card
  * @property demoLink        - link URL for the "Live Demo" button
  * @property codeLink        - link URL for the "View Code" button
+ * @property difficulty      - challenge difficulty
  */
 export type ChallengeData = {
   imageSrc: string;
@@ -82,7 +90,17 @@ export type ChallengeData = {
   cardDescription: string;
   demoLink: string;
   codeLink: string;
+  difficulty: ChallengeDifficulty;
 };
+
+/**
+ * Type for the challenge difficulty
+ */
+export type ChallengeDifficulty =
+  | "newbie"
+  | "junior"
+  | "intermediate"
+  | "advanced";
 
 /**
  * Union of valid technology names

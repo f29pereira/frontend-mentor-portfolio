@@ -13,6 +13,7 @@ export const getChallengesList = (): ChallengeData[] => {
         "E-commerce product page with product info and user shopping cart.",
       demoLink: "https://f29pereira.github.io/sneakers/",
       codeLink: "https://github.com/f29pereira/sneakers",
+      difficulty: "intermediate",
     },
     {
       imageSrc: "images/cards/shortly.png",
@@ -21,6 +22,7 @@ export const getChallengesList = (): ChallengeData[] => {
       cardDescription: "URL shortening landing page using the Clean URI API.",
       demoLink: "https://f29pereira.github.io/shortly/",
       codeLink: "https://github.com/f29pereira/shortly",
+      difficulty: "intermediate",
     },
     {
       imageSrc: "images/cards/conference_ticket_generator.png",
@@ -30,6 +32,7 @@ export const getChallengesList = (): ChallengeData[] => {
         "Form with validation that generates a styled conference ticket.",
       demoLink: "https://f29pereira.github.io/conference-ticket-generator/",
       codeLink: "https://github.com/f29pereira/conference-ticket-generator",
+      difficulty: "junior",
     },
     {
       imageSrc: "images/cards/weather_now.png",
@@ -39,6 +42,7 @@ export const getChallengesList = (): ChallengeData[] => {
         "App with search functionality, unit conversion, and forecasts using the Open-Meteo API.",
       demoLink: "https://f29pereira.github.io/weather-app/",
       codeLink: "https://github.com/f29pereira/weather-app",
+      difficulty: "intermediate",
     },
     {
       imageSrc: "images/cards/fylo.png",
@@ -48,6 +52,7 @@ export const getChallengesList = (): ChallengeData[] => {
         "A dark-themed landing page design for Fylo, a cloud storage service.",
       demoLink: "https://f29pereira.github.io/fylo/",
       codeLink: "https://github.com/f29pereira/fylo",
+      difficulty: "junior",
     },
     {
       imageSrc: "images/cards/bento_grid.png",
@@ -56,6 +61,7 @@ export const getChallengesList = (): ChallengeData[] => {
       cardDescription: "Responsive bento-style grid layout.",
       demoLink: "https://f29pereira.github.io/bento-grid/",
       codeLink: "https://github.com/f29pereira/bento-grid",
+      difficulty: "junior",
     },
     {
       imageSrc: "images/cards/order_summary.png",
@@ -65,6 +71,7 @@ export const getChallengesList = (): ChallengeData[] => {
         "Order summary card component for music subscription plan.",
       demoLink: "https://f29pereira.github.io/order-summary/",
       codeLink: "https://github.com/f29pereira/order-summary",
+      difficulty: "newbie",
     },
   ];
 };

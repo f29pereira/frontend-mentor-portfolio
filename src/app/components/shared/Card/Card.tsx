@@ -1,8 +1,9 @@
 import clsx from "clsx";
 import type { CardProps } from "@/app/types";
 import Image from "next/image";
-import LinkButton from "../../ui/LinkButton/LinkButton";
 import { FiExternalLink, IoLogoGithub } from "@/app/utils/icons";
+import Difficulty from "../Challenge/Difficulty/Difficulty";
+import LinkButton from "../../ui/LinkButton/LinkButton";
 
 /**
  * Renders a card component with:
@@ -19,6 +20,7 @@ export default function Card({
   cardDescription,
   demoLink,
   codeLink,
+  difficulty,
 }: CardProps) {
   return (
     <article
@@ -48,10 +50,26 @@ export default function Card({
 
       {/*Card Body*/}
       <div className="flex-1 flex flex-col">
-        {/*Card Title*/}
-        <h3 className={clsx("my-4 text-center font-bold text-xl", "sm:my-6")}>
-          {cardTitle}
-        </h3>
+        <div
+          className={clsx(
+            "relative flex justify-center items-center my-4",
+            "sm:my-6",
+          )}
+        >
+          {/*Card Title*/}
+          <h3
+            className={clsx(
+              "my-4 max-w-[12.5rem] text-center text-xl font-bold",
+              "sm:max-w-[25rem]",
+            )}
+          >
+            {cardTitle}
+          </h3>
+
+          <div className="absolute right-0">
+            <Difficulty difficulty={difficulty} />
+          </div>
+        </div>
 
         <p className={clsx("mb-8 text-center", "sm:mb-10")}>
           {cardDescription}
