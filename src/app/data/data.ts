@@ -1,4 +1,8 @@
-import type { ChallengeData, TechnologyData } from "../types";
+import type {
+  ChallengeData,
+  ChallengeDifficulty,
+  TechnologyData,
+} from "../types";
 
 /**
  * Returns the list of challenges
@@ -283,4 +287,11 @@ export const getTechnologiesList = (): TechnologyData[] => {
       ],
     },
   ];
+};
+
+/**
+ * Returns the list of filters
+ */
+export const getFilterList = (): ChallengeDifficulty[] => {
+  return ["newbie", "junior", "intermediate", "advanced"];
 };

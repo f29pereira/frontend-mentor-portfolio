@@ -61,12 +61,20 @@ export type TechnologyProps = {
 
 /**
  * Type for the ChallengeContext
- * @property challenges    - list of challenges state
- * @property setChallenges - challenges state setter
+ * @property challenges          - list of challenges state
+ * @property setChallenges       - challenges state setter
+ * @property challengesFilter    - list of filters state
+ * @property addFilter           - adds new filter to the filters state
+ * @property removeFilter        - removes filter from the filters state
+ * @property clearFilters        - clears the filters state
  */
 export type ChallengeContextType = {
   challenges: ChallengeData[];
   setChallenges: Dispatch<SetStateAction<ChallengeData[]>>;
+  challengesFilter: ChallengeDifficulty[];
+  addFilter: (filterToAdd: ChallengeDifficulty) => void;
+  removeFilter: (filterToRemove: ChallengeDifficulty) => void;
+  clearFilters: () => void;
 };
 
 /* ---------------------------------------------------- */

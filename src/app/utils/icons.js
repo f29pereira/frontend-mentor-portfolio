@@ -11,6 +11,7 @@ import {
   FaFigma,
   FaFileDownload,
   FaNode,
+  FaFilter,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -24,9 +25,10 @@ import { FiExternalLink } from "react-icons/fi";
 import { AiOutlineApi } from "react-icons/ai";
 import { TbBrandRedux } from "react-icons/tb";
 import { SiGithubactions } from "react-icons/si";
-import { IoLogoGithub } from "react-icons/io";
+import { IoLogoGithub, IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { IoLibrary } from "react-icons/io5";
 import { MdExtension } from "react-icons/md";
+import { FaFilterCircleXmark } from "react-icons/fa6";
 
 export {
   /*Logos*/
@@ -53,4 +55,8 @@ export {
   FaFileDownload /*download file*/,
   IoLibrary /*Library*/,
   MdExtension /*Extension*/,
+  FaFilter /*Filter*/,
+  FaFilterCircleXmark /*Clear Filter*/,
+  IoIosArrowDown /*Arrow Down*/,
+  IoIosArrowUp /*Arrow Up*/,
 };
