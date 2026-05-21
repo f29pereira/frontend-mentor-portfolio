@@ -37,19 +37,27 @@ export default function FilterPopUp() {
   };
 
   return (
-    <div className={clsx("bg-white border-2 border-stone-300 rounded-3xl")}>
-      <header className="sr-only p-2 text-white font-bold bg-indigo-600 rounded-t-3xl">
-        <h2 className="text-center">Choose Difficulty</h2>
+    <div
+      className={clsx(
+        "px-3 py-5 bg-white border-2 border-stone-300 rounded-3xl",
+      )}
+    >
+      <header className={clsx("mb-4")}>
+        <h2 className="text-center font-bold">Difficulty</h2>
       </header>
 
-      <div className="grid grid-cols-[1fr_auto] gap-2 p-4">
+      <div
+        className={clsx("grid grid-cols-[1fr_auto] gap-x-2 gap-y-4", "sm:px-4")}
+      >
         {filterList.map((filter) => (
           <Fragment key={filter}>
             {/*Checkbox label*/}
-            <label htmlFor={filter}>{getCapitalizedFirstLetter(filter)}</label>
+            <label htmlFor={filter} className={clsx("text-sm", "sm:text-base")}>
+              {getCapitalizedFirstLetter(filter)}
+            </label>
             {/*Checkbox input*/}
             <input
-              className="accent-indigo-600"
+              className="accent-indigo-600 cursor-pointer"
               type="checkbox"
               id={filter}
               value={filter}
