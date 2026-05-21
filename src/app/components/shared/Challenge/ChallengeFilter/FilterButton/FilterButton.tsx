@@ -18,12 +18,14 @@ export default function FilterButton() {
   };
 
   return (
-    <div className={clsx("relative ml-auto", "lg:ml-0")}>
+    <div className={clsx("ml-auto", "lg:ml-0")}>
       <button
         className={clsx(
-          "bg-white border-2 border-stone-300 cursor-pointer rounded-full",
+          "relative",
+          "bg-white border-2 border-stone-300 cursor-pointer rounded-full hover:bg-slate-100",
         )}
         onClick={toggle}
+        aria-label="Challenge Filter"
       >
         <div
           className={clsx(
@@ -32,8 +34,6 @@ export default function FilterButton() {
           )}
         >
           <FaFilter className="text-indigo-600" />
-
-          <span className="">Difficulty</span>
 
           {isOpen ? (
             <IoIosArrowDown className="text-xl text-indigo-600" />
@@ -44,7 +44,7 @@ export default function FilterButton() {
       </button>
 
       {isOpen ? (
-        <div className="absolute z-10 top-14 right-0.5">
+        <div className={clsx("absolute z-10 top-11 right-0.5")}>
           <FilterPopUp />
         </div>
       ) : null}
