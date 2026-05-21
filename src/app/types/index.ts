@@ -77,6 +77,16 @@ export type ChallengeContextType = {
   clearFilters: () => void;
 };
 
+/**
+ * Type for the ThemeContextContext
+ * @property  isDarkTheme -  is the dark mode theme active
+ * @property  toggle      -  toggles the dark theme state
+ */
+export type ThemeContextType = {
+  isDarkTheme: boolean;
+  toggle: () => void;
+};
+
 /* ---------------------------------------------------- */
 /* Other component related types                        */
 /* ---------------------------------------------------- */
