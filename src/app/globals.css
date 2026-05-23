@@ -18,6 +18,7 @@
   /*Text*/
   --color-dark-title: var(--color-gray-100);
   --color-dark-text: var(--color-slate-400);
+  --color-dark-inline-link: var(--color-cyan-400);
 }
 
 :root {
