@@ -55,6 +55,16 @@ export type TechnologyProps = {
   name: TechnologyName;
 };
 
+/**
+ * Props for the FooterLink component
+ * @property url  - url to be opened in a new tab
+ * @property name - link name
+ */
+export type FooterLinkProps = {
+  url: string;
+  name: FooterLinksName;
+};
+
 /* ---------------------------------------------------- */
 /* Context Provider related types                       */
 /* ---------------------------------------------------- */
@@ -173,3 +183,12 @@ export type TechnologyData = {
   category: TechnologyCategory;
   technologies: TechnologyCardProps[];
 };
+
+/**
+ * Type for the footer links
+ */
+export type FooterLinksName =
+  | "gmail"
+  | "linkedin"
+  | "git hub"
+  | "frontend mentor";
