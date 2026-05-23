@@ -23,6 +23,7 @@ export default function ClearFilterButton() {
               "flex justify-center items-center gap-2",
               "text-red-700 hover:text-red-600",
               "sm:gap-4",
+              "dark:text-red-500 dark:hover:text-red-400",
             )}
           >
             <FaFilterCircleXmark className="text-xl" />
