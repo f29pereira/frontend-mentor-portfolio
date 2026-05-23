@@ -28,6 +28,7 @@ export default function Card({
         "flex flex-col px-3.5 py-5",
         "bg-white border-2 border-stone-300 rounded-3xl shadow-lg",
         "hover:shadow-xl duration-700",
+        "dark:bg-dark-card-bg dark:border-dark-card-border dark:hover:shadow-none",
       )}
     >
       {/*Card Image*/}
@@ -36,6 +37,7 @@ export default function Card({
           "relative h-60 overflow-hidden",
           "border-1 border-stone-300 rounded-3xl",
           "sm:h-[25rem]",
+          "dark:border-dark-card-border",
         )}
       >
         <Image
@@ -61,6 +63,7 @@ export default function Card({
             className={clsx(
               "my-4 max-w-[12.5rem] text-center text-xl font-bold",
               "sm:max-w-[25rem]",
+              "dark:text-dark-title",
             )}
           >
             {cardTitle}
@@ -71,7 +74,13 @@ export default function Card({
           </div>
         </div>
 
-        <p className={clsx("mb-8 text-center", "sm:mb-10")}>
+        <p
+          className={clsx(
+            "mb-8 text-center",
+            "sm:mb-10",
+            "dark:text-dark-card-text",
+          )}
+        >
           {cardDescription}
         </p>
 
