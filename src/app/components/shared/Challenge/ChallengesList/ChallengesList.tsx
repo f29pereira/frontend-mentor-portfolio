@@ -28,7 +28,9 @@ export default function ChallengesList() {
 
       {filteredChallenges.length === 0 ? (
         <div className="mt-8 text-center">
-          <p>No challenges for the current filter.</p>
+          <p className="text-dark-text">
+            No challenges for the current filter.
+          </p>
         </div>
       ) : (
         <div
