@@ -21,7 +21,12 @@ export default function TechnologiesList() {
       {technologiesList.map((technology, index: number) => (
         <div className={clsx("mb-10", "sm:mb-12", "lg:mb-14")} key={index}>
           {/*Technology category*/}
-          <h3 className={clsx("mb-4 text-slate-800 font-bold text-xl")}>
+          <h3
+            className={clsx(
+              "mb-4 text-slate-800 font-bold text-xl",
+              "dark:text-dark-title",
+            )}
+          >
             {technology.category}
           </h3>
 
