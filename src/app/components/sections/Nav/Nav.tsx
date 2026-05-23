@@ -1,14 +1,17 @@
 import clsx from "clsx";
 import styles from "./Nav.module.css";
+import ThemeToggleButton from "../../shared/ThemeToggleButton/ThemeToggleButton";
 
 /**
- * Renders Navigation Bar
+ * Renders Navigation Bar with:
+ * - title
+ * - app theme toggle button
  */
 export default function Nav() {
   return (
     <nav
       className={clsx(
-        "px-4 pt-8",
+        "px-4 py-8",
         styles.nav,
         "sm:px-10",
         "md:px-12 md:pt-12",
@@ -16,18 +19,17 @@ export default function Nav() {
         "3xl:px-40",
       )}
     >
-      <ul className={clsx("border-b-2 border-stone-300 text-center")}>
-        <li
-          className={clsx(
-            "mb-8 text-2xl text-blue-800 leading-10 tracking-wider",
-            "sm:text-3xl",
-            "md:mb-12",
-            "lg:text-4xl",
-          )}
-        >
-          Filipe Pereira - Frontend Mentor Challenges
-        </li>
-      </ul>
+      <div className={clsx("flex items-center")}>
+        <span className={clsx("text-lg text-black tracking-wider")}>
+          Challenges Portfolio
+        </span>
+
+        <ul className={clsx("ml-auto text-lg")}>
+          <ThemeToggleButton />
+        </ul>
+      </div>
+
+      <div className={clsx("mt-6 border-b-2 border-stone-300")}></div>
     </nav>
   );
 }

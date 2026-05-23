@@ -28,7 +28,7 @@ import { SiGithubactions } from "react-icons/si";
 import { IoLogoGithub, IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { IoLibrary } from "react-icons/io5";
 import { MdExtension } from "react-icons/md";
-import { FaFilterCircleXmark } from "react-icons/fa6";
+import { FaFilterCircleXmark, FaSun, FaMoon } from "react-icons/fa6";
 
 export {
   /*Logos*/
@@ -59,4 +59,6 @@ export {
   FaFilterCircleXmark /*Clear Filter*/,
   IoIosArrowDown /*Arrow Down*/,
   IoIosArrowUp /*Arrow Up*/,
+  FaMoon /*Toggle Dark theme*/,
+  FaSun /*Toggle Light theme*/,
 };

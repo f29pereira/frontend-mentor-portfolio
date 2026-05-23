@@ -1,12 +1,23 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 @theme {
+  /*Screen sizes:*/
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1536px;
   --breakpoint-3xl: 1800px;
+
+  /*Dark Theme:*/
+  /*App Background*/
+  --color-dark-app-bg: var(--color-slate-900);
+
+  /*Text*/
+  --color-dark-title: var(--color-gray-100);
+  --color-dark-text: var(--color-slate-400);
 }
 
 :root {
