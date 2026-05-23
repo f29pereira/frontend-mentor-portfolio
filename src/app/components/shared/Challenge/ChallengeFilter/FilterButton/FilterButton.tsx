@@ -22,7 +22,9 @@ export default function FilterButton() {
       <button
         className={clsx(
           "relative",
-          "bg-white border-2 border-stone-300 cursor-pointer rounded-full hover:bg-slate-100",
+          "bg-white border-2 border-stone-300 cursor-pointer rounded-full",
+          "hover:bg-slate-100",
+          "dark:bg-dark-card-bg dark:border-dark-card-border dark:hover:bg-gray-700",
         )}
         onClick={toggle}
         aria-label="Challenge Filter"
@@ -33,12 +35,24 @@ export default function FilterButton() {
             "sm:gap-4",
           )}
         >
-          <FaFilter className="text-indigo-600" />
+          <FaFilter
+            className={clsx("text-indigo-600", "dark:text-dark-title")}
+          />
 
           {isOpen ? (
-            <IoIosArrowDown className="text-xl text-indigo-600" />
+            <IoIosArrowDown
+              className={clsx(
+                "text-xl text-indigo-600",
+                "dark:text-dark-title",
+              )}
+            />
           ) : (
-            <IoIosArrowUp className="text-xl text-indigo-600" />
+            <IoIosArrowUp
+              className={clsx(
+                "text-xl text-indigo-600",
+                "dark:text-dark-title",
+              )}
+            />
           )}
         </div>
       </button>

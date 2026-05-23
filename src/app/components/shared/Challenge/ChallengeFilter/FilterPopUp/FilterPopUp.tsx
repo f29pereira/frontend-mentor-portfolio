@@ -40,10 +40,13 @@ export default function FilterPopUp() {
     <div
       className={clsx(
         "px-3 py-5 bg-white border-2 border-stone-300 rounded-3xl",
+        "dark:bg-dark-card-bg dark:border-dark-card-border",
       )}
     >
       <header className={clsx("mb-4")}>
-        <h2 className="text-center font-bold">Difficulty</h2>
+        <h2 className={clsx("text-center font-bold", "dark:text-dark-title")}>
+          Difficulty
+        </h2>
       </header>
 
       <div
@@ -52,7 +55,10 @@ export default function FilterPopUp() {
         {filterList.map((filter) => (
           <Fragment key={filter}>
             {/*Checkbox label*/}
-            <label htmlFor={filter} className={clsx("text-sm", "sm:text-base")}>
+            <label
+              htmlFor={filter}
+              className={clsx("text-sm", "sm:text-base", "dark:text-dark-text")}
+            >
               {getCapitalizedFirstLetter(filter)}
             </label>
             {/*Checkbox input*/}
