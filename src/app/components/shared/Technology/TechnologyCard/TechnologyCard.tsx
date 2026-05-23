@@ -18,7 +18,7 @@ export default function TechnologyCard({
   link,
 }: TechnologyCardProps) {
   return (
-    <div
+    <article
       className={clsx(
         "flex items-stretch gap-4 max-w-[35rem] overflow-hidden",
         "bg-white border-2 border-stone-300 rounded-3xl shadow-lg",
@@ -55,9 +55,11 @@ export default function TechnologyCard({
         )}
         href={link}
         target="_blank"
+        aria-label={`Go to ${name} website (opens in new tab)`}
+        rel="noopener noreferrer"
       >
         <FiExternalLink />
       </a>
-    </div>
+    </article>
   );
 }
