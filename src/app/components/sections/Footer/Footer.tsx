@@ -8,35 +8,32 @@ export default function Footer() {
   return (
     <footer
       className={clsx(
-        "bg-white min-h-20 text-white p-12",
-        "lg:p-20",
+        "bg-white min-h-20 text-white py-14",
+        "md:py-16 lg:py-20 xl:py-24 3xl:py-30",
         "dark:bg-slate-950",
       )}
     >
       <div
         className={clsx(
-          "flex flex-col items-center gap-12",
-          "lg:flex-row lg:justify-center lg:gap-20",
+          "flex justify-center items-center gap-12",
+          "sm:gap-16 md:gap-20 lg:gap-24 xl:gap-28",
         )}
       >
         <h2 className="sr-only">Social Links</h2>
 
-        {/*Social links*/}
-        <div className={clsx("flex flex-row gap-14", "lg:gap-20")}>
-          <FooterLink url="mailto:f29.pereira@gmail.com" name="gmail" />
+        <FooterLink url="mailto:f29.pereira@gmail.com" name="gmail" />
 
-          <FooterLink
-            url="https://www.linkedin.com/in/filipe-pereira-b757471b9"
-            name="linkedin"
-          />
+        <FooterLink
+          url="https://www.linkedin.com/in/filipe-pereira-b757471b9"
+          name="linkedin"
+        />
 
-          <FooterLink url="https://github.com/f29pereira" name="git hub" />
+        <FooterLink url="https://github.com/f29pereira" name="git hub" />
 
-          <FooterLink
-            url="https://www.frontendmentor.io/profile/f29pereira"
-            name="frontend mentor"
-          />
-        </div>
+        <FooterLink
+          url="https://www.frontendmentor.io/profile/f29pereira"
+          name="frontend mentor"
+        />
       </div>
     </footer>
   );

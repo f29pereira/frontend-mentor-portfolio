@@ -29,7 +29,8 @@ export default function FooterLinks({ url, name }: FooterLinkProps) {
    * @param name link name
    */
   const getLinkIcon = (name: FooterLinksName) => {
-    const iconClassName = "text-2xl text-indigo-600 dark:text-dark-inline-link";
+    const iconClassName =
+      "text-2xl text-indigo-600 lg:text-3xl 3xl:text-4xl dark:text-dark-inline-link";
 
     switch (name) {
       case "gmail":
