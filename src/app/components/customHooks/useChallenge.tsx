@@ -1,6 +1,6 @@
 "use client"; // Client Component
 import { useContext } from "react";
-import { ChallengeContext } from "@/app/context/ChallengeProvider/ChallengeProvider";
+import { ChallengeContext } from "@/app/components/context/ChallengeProvider/ChallengeProvider";
 
 /**
  * Custom Hook: allows access to the ChallengeContext

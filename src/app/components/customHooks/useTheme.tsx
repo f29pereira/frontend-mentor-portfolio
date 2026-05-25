@@ -1,6 +1,6 @@
 "use client"; // Client Component
 import { useContext } from "react";
-import { ThemeContext } from "@/app/context/ThemeProvider/ThemeProvider";
+import { ThemeContext } from "@/app/components/context/ThemeProvider/ThemeProvider";
 
 /**
  * Custom Hook: allows access to the ThemeContext

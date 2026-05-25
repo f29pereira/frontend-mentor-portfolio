@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter, Caprasimo } from "next/font/google";
 import clsx from "clsx";
-import ThemeProvider from "./context/ThemeProvider/ThemeProvider";
+import ThemeProvider from "./components/context/ThemeProvider/ThemeProvider";
 import Nav from "./components/sections/Nav/Nav";
 import Footer from "./components/sections/Footer/Footer";
 
