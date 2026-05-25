@@ -13,9 +13,19 @@ export default function Difficulty({ difficulty }: DifficultyProps) {
 
   return (
     <div
-      className={clsx(difficultyBg, "py-1 px-2 rounded-full", "sm:py-2 px-3")}
+      className={clsx(
+        difficultyBg,
+        "max-w-[5rem] py-1 rounded-full",
+        "whitespace-nowrap overflow-hidden",
+        "sm:max-w-full sm:py-2 px-3",
+      )}
     >
-      <span className={clsx("text-xs text-white font-bold", "sm:text-sm")}>
+      <span
+        className={clsx(
+          "text-center text-xs text-white font-bold",
+          "sm:text-sm",
+        )}
+      >
         {difficultyName}
       </span>
     </div>
