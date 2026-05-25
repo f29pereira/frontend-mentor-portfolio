@@ -25,9 +25,10 @@ export default function Card({
   return (
     <article
       className={clsx(
-        "flex flex-col px-3.5 py-5",
+        "flex flex-col px-3.5 py-7",
         "bg-white border-2 border-stone-300 rounded-3xl shadow-lg",
         "hover:shadow-xl duration-700",
+        "sm:px-5 sm:pb-10 md:px-7 md:pb-14 lg:px-3.5",
         "dark:bg-dark-card-bg dark:border-dark-card-border dark:hover:shadow-none",
       )}
     >
@@ -62,7 +63,7 @@ export default function Card({
           <h3
             className={clsx(
               "my-4 max-w-[12.5rem] text-center text-xl font-bold",
-              "sm:max-w-[25rem]",
+              "sm:max-w-[15rem] xl:max-w-[18rem] 2xl:max-w-[15rem] 3xl:max-w-full",
               "dark:text-dark-title",
             )}
           >
@@ -76,8 +77,9 @@ export default function Card({
 
         <p
           className={clsx(
-            "mb-8 text-center",
-            "sm:mb-10",
+            "mb-10 text-center",
+            "sm:mb-14",
+            "lg:max-w-[20rem] lg:mx-auto xl:max-w-[30rem] 3xl:max-w-[25em]",
             "dark:text-dark-card-text",
           )}
         >
@@ -85,12 +87,12 @@ export default function Card({
         </p>
 
         {/*Card Buttons*/}
-        <div className={clsx("flex justify-center gap-8 mt-auto")}>
+        <div className={clsx("flex justify-center gap-8 mt-auto", "sm:gap-12")}>
           <LinkButton
             link={demoLink}
             description={
               <>
-                <FiExternalLink className="text-xl" />
+                <FiExternalLink className={clsx("text-xl", "md:text-2xl")} />
                 <span className="font-bold">Demo</span>
               </>
             }
@@ -99,7 +101,7 @@ export default function Card({
             link={codeLink}
             description={
               <>
-                <IoLogoGithub className="text-xl" />
+                <IoLogoGithub className={clsx("text-xl", "md:text-2xl")} />
                 <span className="font-bold">Repo</span>
               </>
             }
