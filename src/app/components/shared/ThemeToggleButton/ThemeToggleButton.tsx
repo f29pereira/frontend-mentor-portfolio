@@ -13,11 +13,20 @@ export default function ThemeToggleButton() {
   const { isDarkTheme, toggle } = useTheme();
 
   return (
-    <button className={clsx("cursor-pointer")} onClick={toggle}>
+    <button
+      className={clsx(
+        isDarkTheme
+          ? "text-dark-title md:hover:text-gray-400"
+          : "text-nav-btn md:hover:text-nav-btn-hover",
+        "md:cursor-pointer",
+      )}
+      onClick={toggle}
+      aria-label={`Change to ${isDarkTheme ? "light" : "dark"} theme`}
+    >
       {isDarkTheme ? (
-        <FaSun className="text-white" />
+        <FaSun className={clsx("stroke-current")} aria-hidden="true" />
       ) : (
-        <FaMoon className="text-black hover:text-slate-600" />
+        <FaMoon className={clsx("stroke-current")} aria-hidden="true" />
       )}
     </button>
   );
