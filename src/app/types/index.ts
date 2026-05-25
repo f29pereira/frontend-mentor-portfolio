@@ -12,6 +12,14 @@ export type ReactChildrenProp = {
 };
 
 /**
+ * Props for the MobileNav component
+ * @property handleToggle  - state (isMobileNavOpen) setter function
+ */
+export type MobileNavProps = {
+  handleToggle: () => void;
+};
+
+/**
  * Props for the Card component
  */
 export type CardProps = ChallengeData & {};
