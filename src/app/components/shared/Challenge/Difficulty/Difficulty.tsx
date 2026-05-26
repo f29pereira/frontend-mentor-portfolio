@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { DifficultyProps } from "@/app/types";
+import type { DifficultyProps } from "@/app/types";
 import { getDifficultyBgColor } from "./Difficulty.utils";
 import { getCapitalizedFirstLetter } from "@/app/utils/utils";
 
@@ -15,14 +15,14 @@ export default function Difficulty({ difficulty }: DifficultyProps) {
     <div
       className={clsx(
         difficultyBg,
-        "max-w-[5rem] py-1 rounded-full",
-        "whitespace-nowrap overflow-hidden",
-        "sm:max-w-full sm:py-2 px-3",
+        "max-w-[5rem] py-1 px-1.5 rounded-full",
+        "sm:max-w-full sm:py-2 sm:px-3",
       )}
     >
+      <span className="sr-only">Difficulty type:</span>
       <span
         className={clsx(
-          "text-center text-xs text-white font-bold",
+          "block truncate text-center text-xs text-white font-bold",
           "sm:text-sm",
         )}
       >
