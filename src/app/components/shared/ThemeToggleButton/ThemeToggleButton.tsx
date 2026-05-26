@@ -17,7 +17,7 @@ export default function ThemeToggleButton() {
       className={clsx(
         isDarkTheme
           ? "text-dark-title md:hover:text-gray-400"
-          : "text-nav-btn md:hover:text-nav-btn-hover",
+          : "text-nav-link md:hover:text-nav-link-hover",
         "md:cursor-pointer",
       )}
       onClick={toggle}
