@@ -22,8 +22,8 @@ export default function MobileNavToggle() {
       {!isToggled ? (
         <button
           className={clsx(
-            "text-nav-btn cursor-pointer",
-            "md:cursor-pointer md:hover:text-nav-btn-hover",
+            "text-nav-btn cursor-pointer text-nav-link",
+            "md:cursor-pointer md:hover:text-nav-link-hover",
             "dark:text-dark-title",
           )}
           aria-label={isToggled ? "" : "Open Navigation"}
