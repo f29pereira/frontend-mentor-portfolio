@@ -10,14 +10,15 @@ export default function ExternalLinkButton({
   styles,
   link,
   goToText,
-  description,
   icon,
+  description,
 }: ExternalLinkButtonProps) {
   return (
     <a
       className={clsx("rounded-full cursor-pointer", "sm:text-base", styles)}
       href={link}
       aria-label={`Go to ${goToText} (opens in new tab)`}
+      target="_blank"
       rel="noopener noreferrer"
     >
       <div
