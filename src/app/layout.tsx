@@ -3,7 +3,7 @@ import "./globals.css";
 import { Inter, Caprasimo } from "next/font/google";
 import clsx from "clsx";
 import ThemeProvider from "./components/context/ThemeProvider/ThemeProvider";
-import Nav from "./components/sections/Nav/Nav";
+import Nav from "./components/sections/Navigation/Nav/Nav";
 import Footer from "./components/sections/Footer/Footer";
 
 const caprasimo = Caprasimo({
