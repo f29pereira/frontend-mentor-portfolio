@@ -11,7 +11,7 @@ export default function Challenge() {
   return (
     <section className={clsx("mb-20", "sm:mb-32")}>
       {/*Title*/}
-      <h2
+      <h1
         className={clsx(
           "mb-4 text-2xl font-bold text-indigo-950",
           "lg:text-3xl xl:mb-8",
@@ -19,7 +19,8 @@ export default function Challenge() {
         )}
       >
         Challenges
-      </h2>
+      </h1>
+
       {/*Description*/}
       <p className={clsx("mb-2", "dark:text-dark-text")}>
         This is a collection of coding challenges I&apos;ve completed from{" "}
@@ -31,8 +32,10 @@ export default function Challenge() {
           )}
           href="https://www.frontendmentor.io/home"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Go to Frontend Mentor page (opens in new tab)"
         >
-          Frontend Mentor
+          <span aria-hidden="true">Frontend Mentor</span>
         </a>
         . In these challenges I focused on building{" "}
         <strong className="dark:font-extrabold">mobile-first</strong>,{" "}
