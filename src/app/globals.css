@@ -13,8 +13,8 @@
 
   /*Light Theme - Colors:*/
   /*Navigation buttons*/
-  --color-nav-btn: var(--color-slate-700);
-  --color-nav-btn-hover: var(--color-slate-600);
+  --color-nav-link: var(--color-slate-700);
+  --color-nav-link-hover: var(--color-slate-600);
 
   /*Dark Theme - Colors:*/
   /*App Background*/
