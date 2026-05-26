@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import type { FooterLinkProps, FooterLinksName } from "@/app/types";
 import {
   FaLinkedin,
@@ -29,18 +30,22 @@ export default function FooterLinks({ url, name }: FooterLinkProps) {
    * @param name link name
    */
   const getLinkIcon = (name: FooterLinksName) => {
-    const iconClassName =
-      "text-2xl text-indigo-600 lg:text-3xl 3xl:text-4xl dark:text-dark-inline-link";
+    const size = "text-2xl lg:text-3xl 3xl:text-4xl";
+    const lightTheme = "text-indigo-600 hover:text-indigo-500";
+    const darkTheme =
+      "dark:text-dark-inline-link dark:hover:text-dark-inline-link-hover";
 
     switch (name) {
       case "gmail":
-        return <SiGmail className={iconClassName} />;
+        return <SiGmail className={clsx(size, lightTheme, darkTheme)} />;
       case "linkedin":
-        return <FaLinkedin className={iconClassName} />;
+        return <FaLinkedin className={clsx(size, lightTheme, darkTheme)} />;
       case "git hub":
-        return <IoLogoGithub className={iconClassName} />;
+        return <IoLogoGithub className={clsx(size, lightTheme, darkTheme)} />;
       case "frontend mentor":
-        return <SiFrontendmentor className={iconClassName} />;
+        return (
+          <SiFrontendmentor className={clsx(size, lightTheme, darkTheme)} />
+        );
     }
   };
 
