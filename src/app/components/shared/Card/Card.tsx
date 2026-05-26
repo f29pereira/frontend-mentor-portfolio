@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import type { CardProps } from "@/app/types";
 import Image from "next/image";
-import { FiExternalLink, IoLogoGithub } from "@/app/utils/icons";
+import { FiGlobe, IoLogoGithub } from "@/app/utils/icons";
 import Difficulty from "../Challenge/Difficulty/Difficulty";
-import LinkButton from "../../ui/LinkButton/LinkButton";
+import ExternalLinkButton from "../../ui/LinkButton/ExternalLinkButton/ExternalLinkButton";
 
 /**
  * Renders a card component with:
@@ -22,6 +22,12 @@ export default function Card({
   codeLink,
   difficulty,
 }: CardProps) {
+  const linkStyle = clsx(
+    "block py-2 px-5 text-white bg-indigo-600",
+    "md:hover:bg-indigo-500",
+    "dark:bg-indigo-500 dark:shadow-none dark:hover:bg-indigo-400",
+  );
+
   return (
     <article
       className={clsx(
@@ -60,7 +66,7 @@ export default function Card({
           )}
         >
           {/*Card Title*/}
-          <h3
+          <h2
             className={clsx(
               "my-4 max-w-[12.5rem] text-center text-xl font-bold",
               "sm:max-w-[15rem] xl:max-w-[18rem] 2xl:max-w-[15rem] 3xl:max-w-full",
@@ -68,7 +74,7 @@ export default function Card({
             )}
           >
             {cardTitle}
-          </h3>
+          </h2>
 
           <div className="absolute right-0">
             <Difficulty difficulty={difficulty} />
@@ -88,23 +94,29 @@ export default function Card({
 
         {/*Card Buttons*/}
         <div className={clsx("flex justify-center gap-8 mt-auto", "sm:gap-12")}>
-          <LinkButton
+          <ExternalLinkButton
+            styles={linkStyle}
             link={demoLink}
-            description={
-              <>
-                <FiExternalLink className={clsx("text-xl", "md:text-2xl")} />
-                <span className="font-bold">Demo</span>
-              </>
+            goToText={`${cardTitle} app`}
+            icon={
+              <FiGlobe
+                className={clsx("text-xl", "md:text-2xl")}
+                aria-hidden="true"
+              />
             }
+            description="App"
           />
-          <LinkButton
+          <ExternalLinkButton
+            styles={linkStyle}
             link={codeLink}
-            description={
-              <>
-                <IoLogoGithub className={clsx("text-xl", "md:text-2xl")} />
-                <span className="font-bold">Repo</span>
-              </>
+            goToText={`${cardTitle} GitHub repository`}
+            icon={
+              <IoLogoGithub
+                className={clsx("text-xl", "md:text-2xl")}
+                aria-hidden="true"
+              />
             }
+            description="Repo"
           />
         </div>
       </div>
