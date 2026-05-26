@@ -40,7 +40,7 @@ export default function RootLayout({
           <Nav />
           <main
             className={clsx(
-              "flex-1 px-4 py-16",
+              "flex-1 px-6 py-8",
               "sm:px-10 md:px-12",
               "lg:px-14 xl:px-16 2xl:px-20",
               "3xl:px-40 3xl:py-20",
