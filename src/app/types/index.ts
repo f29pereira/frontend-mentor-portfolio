@@ -47,13 +47,45 @@ export type TechnologyCardProps = {
 
 /**
  * Props for the LinkButton component
+ * @property styling     - link styles
  * @property link        - link URL
- * @property description - button description
+ * @property ariaLabel   - (optional) aria-label text
+ * @property description - link description
  */
 export type LinkButtonProps = {
+  styles: string;
   link: string;
-  description: ReactNode;
+  ariaLabel?: string;
+  description: string;
 };
+
+/**
+ * Props for the ExternalLinkButton component
+ * @property styles      - link styles
+ * @property link        - link URL
+ * @property description - link description
+ * @property icon        - (optional) link icon
+ * @property goToText    - text added to the aria-label
+ */
+export type ExternalLinkButtonProps = Pick<
+  LinkButtonProps,
+  "styles" | "link" | "ariaLabel" | "description"
+> & {
+  icon?: ReactNode;
+  goToText: string;
+};
+
+/**
+ * Props for the DownloadButton component
+ * @property styles      - link styles
+ * @property link        - link URL
+ * @property ariaLabel   - (optional) aria-label text
+ * @property description - link description
+ */
+export type DownloadLinkButtonProps = Pick<
+  LinkButtonProps,
+  "styles" | "link" | "ariaLabel" | "description"
+>;
 
 /**
  * Props for the Technology component

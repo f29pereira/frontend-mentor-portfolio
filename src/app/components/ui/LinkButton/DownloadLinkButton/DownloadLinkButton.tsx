@@ -1,29 +1,30 @@
 import clsx from "clsx";
-import type { LinkButtonProps } from "@/app/types";
-import { FiArrowUpRight } from "@/app/utils/icons";
+import type { DownloadLinkButtonProps } from "@/app/types";
+import { FaFileDownload } from "@/app/utils/icons";
 
 /**
- * Renders a link styled like a pill button
+ * Renders a download link styled like a pill button
  *
- * Props are defined in {@link LinkButtonProps}.
+ * Props are defined in {@link DownloadLinkButtonProps}.
  */
-export default function LinkButton({
+export default function DownloadLinkButton({
   styles,
   link,
   ariaLabel,
   description,
-}: LinkButtonProps) {
+}: DownloadLinkButtonProps) {
   return (
     <a
       className={clsx("rounded-full cursor-pointer", styles)}
       href={link}
       aria-label={ariaLabel}
+      download
     >
       <div
         className={clsx("flex justify-center items-center gap-4", "md:gap-6")}
       >
-        <FiArrowUpRight
-          className={clsx("text-2xl", "md:text-3xl", "xl:text-4xl")}
+        <FaFileDownload
+          className={clsx("text-xl", "md:text-2xl", "xl:text-3xl")}
           aria-hidden="true"
         />
         <span className="font-bold">{description}</span>
