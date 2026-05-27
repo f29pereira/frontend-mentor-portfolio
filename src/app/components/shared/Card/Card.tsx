@@ -3,7 +3,7 @@ import type { CardProps } from "@/app/types";
 import Image from "next/image";
 import { FiGlobe, IoLogoGithub } from "@/app/utils/icons";
 import Difficulty from "../Challenge/Difficulty/Difficulty";
-import ExternalLinkButton from "../../ui/LinkButton/ExternalLinkButton/ExternalLinkButton";
+import ExternalLinkButton from "../../ui/Link/ExternalLink/ExternalLinkButton";
 
 /**
  * Renders a card component with:
@@ -23,10 +23,13 @@ export default function Card({
   difficulty,
 }: CardProps) {
   const linkStyle = clsx(
-    "block py-2 px-5 text-white bg-indigo-600",
+    "block px-5 py-2 rounded-full text-white bg-indigo-600",
+    "sm:text-lg sm:px-6 py-3",
     "md:hover:bg-indigo-500",
     "dark:bg-indigo-500 dark:shadow-none dark:hover:bg-indigo-400",
   );
+
+  const containerStyle = clsx("gap-2", "sm:gap-4");
 
   return (
     <article
@@ -95,7 +98,8 @@ export default function Card({
         {/*Card Buttons*/}
         <div className={clsx("flex justify-center gap-8 mt-auto", "sm:gap-12")}>
           <ExternalLinkButton
-            styles={linkStyle}
+            anchorStyle={linkStyle}
+            containerStyle={containerStyle}
             link={demoLink}
             goToText={`${cardTitle} app`}
             icon={
@@ -107,7 +111,8 @@ export default function Card({
             description="App"
           />
           <ExternalLinkButton
-            styles={linkStyle}
+            anchorStyle={linkStyle}
+            containerStyle={containerStyle}
             link={codeLink}
             goToText={`${cardTitle} GitHub repository`}
             icon={

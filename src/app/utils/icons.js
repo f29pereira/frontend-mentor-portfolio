@@ -21,7 +21,7 @@ import {
   SiTestinglibrary,
   SiTailwindcss,
 } from "react-icons/si";
-import { FiExternalLink } from "react-icons/fi";
+import { FiArrowUpRight, FiExternalLink, FiGlobe } from "react-icons/fi";
 import { AiOutlineApi } from "react-icons/ai";
 import { TbBrandRedux } from "react-icons/tb";
 import { SiGithubactions } from "react-icons/si";
@@ -51,7 +51,8 @@ export {
   SiGithubactions /*GitHub actions*/,
   FaNode /*Node.js*/,
   /*Other*/
-  FiExternalLink /*link*/,
+  FiArrowUpRight /*page link*/,
+  FiExternalLink /*external link*/,
   FaCode /*code*/,
   FaFileDownload /*download file*/,
   IoLibrary /*Library*/,
@@ -64,4 +65,5 @@ export {
   FaSun /*Toggle Light theme*/,
   GiHamburgerMenu /*Mobile navigation*/,
   IoClose /*Close*/,
+  FiGlobe /*Live website*/,
 };
