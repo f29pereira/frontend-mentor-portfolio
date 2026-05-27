@@ -29,16 +29,6 @@ export const getChallengesList = (): ChallengeData[] => {
       difficulty: "intermediate",
     },
     {
-      imageSrc: "images/cards/conference_ticket_generator.png",
-      imageAlt: "Conference Ticket Generator Challenge",
-      cardTitle: "Conference Ticket Generator",
-      cardDescription:
-        "Form with validation that generates a styled conference ticket.",
-      demoLink: "https://f29pereira.github.io/conference-ticket-generator/",
-      codeLink: "https://github.com/f29pereira/conference-ticket-generator",
-      difficulty: "junior",
-    },
-    {
       imageSrc: "images/cards/weather_now.png",
       imageAlt: "Weather App challenge Challenge",
       cardTitle: "Weather Now",
@@ -47,6 +37,16 @@ export const getChallengesList = (): ChallengeData[] => {
       demoLink: "https://f29pereira.github.io/weather-app/",
       codeLink: "https://github.com/f29pereira/weather-app",
       difficulty: "intermediate",
+    },
+    {
+      imageSrc: "images/cards/conference_ticket_generator.png",
+      imageAlt: "Conference Ticket Generator Challenge",
+      cardTitle: "Conference Ticket Generator",
+      cardDescription:
+        "Form with validation that generates a styled conference ticket.",
+      demoLink: "https://f29pereira.github.io/conference-ticket-generator/",
+      codeLink: "https://github.com/f29pereira/conference-ticket-generator",
+      difficulty: "junior",
     },
     {
       imageSrc: "images/cards/fylo.png",
@@ -165,7 +165,7 @@ export const getTechnologiesList = (): TechnologyData[] => {
         },
         {
           iconName: "focus_trap_react",
-          name: "focus_trap_react",
+          name: "focus-trap-react",
           description: "React component that traps focus",
           link: "https://www.npmjs.com/package/focus-trap-react",
         },
