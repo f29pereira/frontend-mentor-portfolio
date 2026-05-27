@@ -2,6 +2,7 @@ import clsx from "clsx";
 import type { TechnologyCardProps } from "@/app/types";
 import TechnologyIcon from "../TechnologyIcon/TechnologyIcon";
 import { FiExternalLink } from "@/app/utils/icons";
+import ExternalLinkButton from "@/app/components/ui/Link/ExternalLink/ExternalLinkButton";
 
 /**
  * Renders a technology card with:
@@ -17,6 +18,12 @@ export default function TechnologyCard({
   description,
   link,
 }: TechnologyCardProps) {
+  const linkStyle = clsx(
+    "flex items-center p-4 bg-indigo-600",
+    "hover:bg-indigo-500 text-2xl text-white",
+    "dark:bg-indigo-500 dark:hover:bg-indigo-400",
+  );
+
   return (
     <article
       className={clsx(
@@ -47,19 +54,14 @@ export default function TechnologyCard({
         </span>
       </div>
 
-      <a
-        className={clsx(
-          "flex items-center p-4",
-          "bg-indigo-600 hover:bg-indigo-500 text-xl text-white",
-          "dark:bg-indigo-500 dark:hover:bg-indigo-400",
-        )}
-        href={link}
-        target="_blank"
-        aria-label={`Go to ${name} website (opens in new tab)`}
-        rel="noopener noreferrer"
-      >
-        <FiExternalLink />
-      </a>
+      <ExternalLinkButton
+        anchorStyle={linkStyle}
+        containerStyle=""
+        link={link}
+        goToText={`${name} website`}
+        icon={<FiExternalLink aria-hidden="true" />}
+        description=""
+      />
     </article>
   );
 }
