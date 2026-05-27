@@ -1,12 +1,37 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 @theme {
+  /*Screen sizes:*/
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1536px;
   --breakpoint-3xl: 1800px;
+
+  /*Light Theme - Colors:*/
+  /*Navigation buttons*/
+  --color-nav-link: var(--color-slate-700);
+  --color-nav-link-hover: var(--color-slate-600);
+
+  /*Dark Theme - Colors:*/
+  /*App Background*/
+  --color-dark-app-bg: var(--color-slate-900);
+
+  /*Card*/
+  --color-dark-card-bg: var(--color-gray-800);
+  --color-dark-card-border: var(--color-gray-700);
+  --color-dark-card-text: var(--color-slate-300);
+
+  /*Text*/
+  --color-dark-title: var(--color-gray-100);
+  --color-dark-text: var(--color-slate-400);
+
+  /*Links*/
+  --color-dark-inline-link: var(--color-cyan-400);
+  --color-dark-inline-link-hover: var(--color-cyan-300);
 }
 
 :root {

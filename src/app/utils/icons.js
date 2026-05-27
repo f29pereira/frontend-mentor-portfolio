@@ -11,6 +11,7 @@ import {
   FaFigma,
   FaFileDownload,
   FaNode,
+  FaFilter,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -20,13 +21,15 @@ import {
   SiTestinglibrary,
   SiTailwindcss,
 } from "react-icons/si";
-import { FiExternalLink } from "react-icons/fi";
+import { FiArrowUpRight, FiExternalLink, FiGlobe } from "react-icons/fi";
 import { AiOutlineApi } from "react-icons/ai";
 import { TbBrandRedux } from "react-icons/tb";
 import { SiGithubactions } from "react-icons/si";
-import { IoLogoGithub } from "react-icons/io";
-import { IoLibrary } from "react-icons/io5";
+import { IoLogoGithub, IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { IoLibrary, IoClose } from "react-icons/io5";
 import { MdExtension } from "react-icons/md";
+import { FaFilterCircleXmark, FaSun, FaMoon } from "react-icons/fa6";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export {
   /*Logos*/
@@ -48,9 +51,19 @@ export {
   SiGithubactions /*GitHub actions*/,
   FaNode /*Node.js*/,
   /*Other*/
-  FiExternalLink /*link*/,
+  FiArrowUpRight /*page link*/,
+  FiExternalLink /*external link*/,
   FaCode /*code*/,
   FaFileDownload /*download file*/,
   IoLibrary /*Library*/,
   MdExtension /*Extension*/,
+  FaFilter /*Filter*/,
+  FaFilterCircleXmark /*Clear Filter*/,
+  IoIosArrowDown /*Arrow Down*/,
+  IoIosArrowUp /*Arrow Up*/,
+  FaMoon /*Toggle Dark theme*/,
+  FaSun /*Toggle Light theme*/,
+  GiHamburgerMenu /*Mobile navigation*/,
+  IoClose /*Close*/,
+  FiGlobe /*Live website*/,
 };

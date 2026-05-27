@@ -2,7 +2,7 @@
 
 This is a collection of coding challenges I’ve completed from [Frontend Mentor](https://www.frontendmentor.io/home).
 
-<img src="public/images/readme/frontend_mentor_portfolio.jpeg" width="750" alt="Frontend Mentor Challenges Portfolio">
+<img src="public/images/readme/frontend_mentor_portfolio.png" width="750" alt="Frontend Mentor Challenges Portfolio">
 
 🔗 [Live Demo](https://f29pereira.github.io/frontend-mentor-portfolio/)
 
@@ -10,13 +10,16 @@ This is a collection of coding challenges I’ve completed from [Frontend Mentor
 
 - [Overview](#overview)
 - [The Challenges](#the-challenges)
-  - [Sneakers](#sneakers)
-  - [Shortly](#shortly)
-  - [Conference Ticket Generator](#conference-ticket-generator)
-  - [Weather Now](#weather-now)
-  - [Fylo](#fylo)
-  - [Bento Grid](#bento-grid)
-  - [Order Summary](#order-summary)
+  - [Intermediate Challenges](#intermediate-challenges)
+    - [Sneakers](#sneakers)
+    - [Shortly](#shortly)
+    - [Weather Now](#weather-now)
+  - [Junior Challenges](#junior-challenges)
+    - [Conference Ticket Generator](#conference-ticket-generator)
+    - [Fylo](#fylo)
+    - [Bento Grid](#bento-grid)
+  - [Newbie Challenges](#newbie-challenges)
+    - [Order Summary](#order-summary)
 - [Technologies](#technologies)
 - [Author](#author)
 
@@ -31,7 +34,11 @@ In these challenges, I focused on:
 
 ## The challenges
 
-### Sneakers
+### Intermediate Challenges
+
+Projects with more complex designs and functionality, with some using APIs.
+
+#### Sneakers
 
 A responsive e-commerce product page with product info and user shopping cart.
 
@@ -41,7 +48,7 @@ A responsive e-commerce product page with product info and user shopping cart.
 
 🔗 [Live Demo](https://f29pereira.github.io/sneakers/) | 📂 [Code](https://github.com/f29pereira/sneakers)
 
-### Shortly
+#### Shortly
 
 A responsive URL shortening landing page using the [Clean URI API](https://cleanuri.com/docs).
 
@@ -51,7 +58,21 @@ A responsive URL shortening landing page using the [Clean URI API](https://clean
 
 🔗 [Live Demo](https://f29pereira.github.io/shortly/) | 📂 [Code](https://github.com/f29pereira/shortly)
 
-### Conference Ticket Generator
+#### Weather Now
+
+A responsive weather app with search functionality, unit conversion, and detailed forecasts using the [Open-Meteo API](https://open-meteo.com/).
+
+<img src="public/images/readme/weather_now.png" width="750" alt="Weather now challenge desktop layout">
+
+**Technologies used:** Next.js, React, React Developer Tools, TypeScript, HTML, CSS, and Open-Meteo API
+
+🔗 [Live Demo](https://f29pereira.github.io/weather-app/) | 📂 [Code](https://github.com/f29pereira/weather-app)
+
+### Junior Challenges
+
+Projects with more structured designs, form handling, and some functionality.
+
+#### Conference Ticket Generator
 
 A responsive web form with validation (required fields, image type and size, name, email, and GitHub username format) that generates a conference ticket upon successful submission.
 
@@ -67,17 +88,7 @@ A responsive web form with validation (required fields, image type and size, nam
 
 🔗 [Live Demo](https://f29pereira.github.io/conference-ticket-generator/) | 📂 [Code](https://github.com/f29pereira/conference-ticket-generator)
 
-### Weather Now
-
-A responsive weather app with search functionality, unit conversion, and detailed forecasts using the [Open-Meteo API](https://open-meteo.com/).
-
-<img src="public/images/readme/weather_now.png" width="750" alt="Weather now challenge desktop layout">
-
-**Technologies used:** Next.js, React, React Developer Tools, TypeScript, HTML, CSS, and Open-Meteo API
-
-🔗 [Live Demo](https://f29pereira.github.io/weather-app/) | 📂 [Code](https://github.com/f29pereira/weather-app)
-
-### Fylo
+#### Fylo
 
 A dark-themed landing page design for Fylo, a cloud storage service.
 
@@ -87,9 +98,9 @@ A dark-themed landing page design for Fylo, a cloud storage service.
 
 🔗 [Live Demo](https://f29pereira.github.io/fylo/) | 📂 [Code](https://github.com/f29pereira/fylo)
 
-### Bento Grid
+#### Bento Grid
 
-Bento-style grid layout.
+Bento-style grid layout that adapts to any screen size.
 
 <img src="public/images/readme/bento_grid.png" width="750" alt="Bento grid challenge desktop layout">
 
@@ -97,7 +108,11 @@ Bento-style grid layout.
 
 🔗 [Live Demo](https://f29pereira.github.io/bento-grid/) | 📂 [Code](https://github.com/f29pereira/bento-grid)
 
-### Order Summary
+### Newbie Challenges
+
+Entry-level projects with simple designs that focus on HTML and CSS fundamentals.
+
+#### Order Summary
 
 An order summary card component for a music subscription plan.
 
@@ -108,6 +123,8 @@ An order summary card component for a music subscription plan.
 🔗 [Live Demo](https://f29pereira.github.io/order-summary/) | 📂 [Code](https://github.com/f29pereira/order-summary)
 
 ## Technologies
+
+These are the technologies I used across my Frontend Mentor challenges:
 
 - **Frameworks:**
 
@@ -123,11 +140,11 @@ An order summary card component for a music subscription plan.
 
 - **Programming Language:**
 
-  [JavaScript](https://www.typescriptlang.org/) - Strongly typed PL that builds on JavaScript, giving better tooling at any scale
+  [TypeScript](https://www.typescriptlang.org/) - Strongly typed programming language that builds on JavaScript, giving better tooling at any scale
 
 - **Runtime:**
 
-  [Node.js](https://nodejs.org/en) - Cross-platform JS runtime environment that lets developers create servers, web apps, command line tools and scripts
+  [Node.js](https://nodejs.org/en) - Cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts
 
 - **Libraries:**
 
@@ -141,7 +158,7 @@ An order summary card component for a music subscription plan.
 
   [Hero Icons](https://heroicons.com/) - SVG icons by the makers of Tailwind CSS
 
-- **State Management:** Redux Toolkit
+- **State Management:**
 
   [Redux Toolkit](https://redux-toolkit.js.org/) - Manage global app state with Redux, with less boilerplate
 
@@ -167,9 +184,9 @@ An order summary card component for a music subscription plan.
 
 - **Version control and CI/CD:**
 
-  [Git Hub](https://github.com/) - Version control system for tracking code changes and managing project history
+  [GitHub](https://github.com/) - Version control system for tracking code changes and managing project history
 
-  [Git Hub Actions](https://github.com/features/actions) - CI/CD platform built into GitHub that automates workflows on every push or pull request
+  [GitHub Actions](https://github.com/features/actions) - CI/CD platform built into GitHub that automates workflows on every push or pull request
 
 - **Design:**
 
@@ -177,6 +194,7 @@ An order summary card component for a music subscription plan.
 
 ## Author
 
+- Email - [f29.pereira@gmail.com](mailto:f29.pereira@gmail.com)
 - GitHub — [@f29pereira](https://github.com/f29pereira)
 - Frontend Mentor — [@f29pereira](https://www.frontendmentor.io/profile/f29pereira)
 - LinkedIn — [Filipe Pereira](https://www.linkedin.com/in/filipe-pereira-b757471b9)

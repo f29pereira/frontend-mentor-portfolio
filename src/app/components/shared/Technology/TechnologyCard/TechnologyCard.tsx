@@ -2,6 +2,7 @@ import clsx from "clsx";
 import type { TechnologyCardProps } from "@/app/types";
 import TechnologyIcon from "../TechnologyIcon/TechnologyIcon";
 import { FiExternalLink } from "@/app/utils/icons";
+import ExternalLinkButton from "@/app/components/ui/Link/ExternalLink/ExternalLinkButton";
 
 /**
  * Renders a technology card with:
@@ -17,12 +18,19 @@ export default function TechnologyCard({
   description,
   link,
 }: TechnologyCardProps) {
+  const linkStyle = clsx(
+    "flex items-center p-4 bg-indigo-600",
+    "hover:bg-indigo-500 text-2xl text-white",
+    "dark:bg-indigo-500 dark:hover:bg-indigo-400",
+  );
+
   return (
-    <div
+    <article
       className={clsx(
         "flex items-stretch gap-4 max-w-[35rem] overflow-hidden",
         "bg-white border-2 border-stone-300 rounded-3xl shadow-lg",
         "hover:shadow-xl duration-700",
+        "dark:bg-dark-card-bg dark:border-dark-card-border",
       )}
     >
       {/*Icon*/}
@@ -32,21 +40,28 @@ export default function TechnologyCard({
 
       <div className={clsx("flex-1 flex flex-col justify-center gap-1 py-2")}>
         {/*Title*/}
-        <h4 className={clsx("block text-center text-xl font-bold")}>{name}</h4>
+        <h4
+          className={clsx(
+            "block text-center text-xl font-bold",
+            "dark:text-dark-title",
+          )}
+        >
+          {name}
+        </h4>
         {/*Description*/}
-        <span className="block text-center">{description}</span>
+        <span className={clsx("block text-center", "dark:text-dark-card-text")}>
+          {description}
+        </span>
       </div>
 
-      <a
-        className={clsx(
-          "flex items-center p-4",
-          "bg-indigo-600 hover:bg-indigo-500 text-xl text-white",
-        )}
-        href={link}
-        target="_blank"
-      >
-        <FiExternalLink />
-      </a>
-    </div>
+      <ExternalLinkButton
+        anchorStyle={linkStyle}
+        containerStyle=""
+        link={link}
+        goToText={`${name} website`}
+        icon={<FiExternalLink aria-hidden="true" />}
+        description=""
+      />
+    </article>
   );
 }

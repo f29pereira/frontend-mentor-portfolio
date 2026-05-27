@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter, Caprasimo } from "next/font/google";
 import clsx from "clsx";
-import Nav from "./components/sections/Nav/Nav";
+import ThemeProvider from "./components/context/ThemeProvider/ThemeProvider";
+import Nav from "./components/sections/Navigation/Nav/Nav";
 import Footer from "./components/sections/Footer/Footer";
 
 const caprasimo = Caprasimo({
@@ -28,20 +29,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${caprasimo.variable} ${inter.variable}`}>
-      <body className="flex flex-col min-h-screen bg-slate-100">
-        <Nav />
-        <main
+      <ThemeProvider>
+        <body
           className={clsx(
-            "flex-1 px-4 py-16",
-            "sm:px-10 md:px-12",
-            "lg:px-14 xl:px-16 2xl:px-20",
-            "3xl:px-40 3xl:py-20",
+            "flex flex-col min-h-screen",
+            "bg-slate-100 transition-colors duration-500",
+            "dark:bg-dark-app-bg",
           )}
         >
-          {children}
-        </main>
-        <Footer />
-      </body>
+          <Nav />
+          <main
+            className={clsx(
+              "flex-1 px-6 py-8",
+              "sm:px-10 md:px-12",
+              "lg:px-14 xl:px-16 2xl:px-20",
+              "3xl:px-40 3xl:py-20",
+            )}
+          >
+            {children}
+          </main>
+          <Footer />
+        </body>
+      </ThemeProvider>
     </html>
   );
 }

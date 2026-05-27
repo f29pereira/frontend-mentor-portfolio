@@ -1,49 +1,39 @@
 import clsx from "clsx";
-import {
-  FaLinkedin,
-  SiGmail,
-  IoLogoGithub,
-  SiFrontendmentor,
-} from "@/app/utils/icons";
+import FooterLink from "../../shared/FooterLink/FooterLink";
 
 /**
- * Renders the footer with email and account links
+ * Renders the footer with social Links
  */
 export default function Footer() {
   return (
-    <footer className={clsx("bg-blue-800 min-h-20 text-white p-12", "lg:p-20")}>
+    <footer
+      className={clsx(
+        "bg-white min-h-20 text-white py-14",
+        "md:py-16 lg:py-20 xl:py-24 3xl:py-30",
+        "dark:bg-slate-950",
+      )}
+    >
       <div
         className={clsx(
-          "flex flex-col items-center gap-12",
-          "lg:flex-row lg:justify-center lg:gap-20",
+          "flex justify-center items-center gap-12",
+          "sm:gap-16 md:gap-20 lg:gap-24 xl:gap-28",
         )}
       >
-        {/*Email*/}
-        <div className={clsx("flex justify-center items-center gap-4")}>
-          <SiGmail className="text-xl" />
-          <span className={clsx("text-sm lg:text-base")}>
-            f29.pereira@gmail.com
-          </span>
-        </div>
+        <h2 className="sr-only">Social Links</h2>
 
-        {/*Account links*/}
-        <div className={clsx("flex flex-row gap-12 text-4xl", "lg:gap-20")}>
-          <a
-            href="https://www.linkedin.com/in/filipe-pereira-b757471b9"
-            target="_blank"
-          >
-            <FaLinkedin />
-          </a>
-          <a href="https://github.com/f29pereira" target="_blank">
-            <IoLogoGithub />
-          </a>
-          <a
-            href="https://www.frontendmentor.io/profile/f29pereira"
-            target="_blank"
-          >
-            <SiFrontendmentor />
-          </a>
-        </div>
+        <FooterLink url="mailto:f29.pereira@gmail.com" name="gmail" />
+
+        <FooterLink
+          url="https://www.linkedin.com/in/filipe-pereira-b757471b9"
+          name="linkedin"
+        />
+
+        <FooterLink url="https://github.com/f29pereira" name="git hub" />
+
+        <FooterLink
+          url="https://www.frontendmentor.io/profile/f29pereira"
+          name="frontend mentor"
+        />
       </div>
     </footer>
   );

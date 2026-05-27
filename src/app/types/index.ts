@@ -1,33 +1,35 @@
-import { ReactNode } from "react";
+import { ReactNode, Dispatch, SetStateAction } from "react";
 
 /* ---------------------------------------------------- */
 /* Components Props types                               */
 /* ---------------------------------------------------- */
 
 /**
- * Props for the Card component
- * @property imageSrc        - URL of image displayed at the top
- * @property imageAlt        - alt text for the image
- * @property cardTitle       - title of the card
- * @property cardDescription - description of the card
- * @property demoLink        - link URL for the "Live Demo" button
- * @property codeLink        - link URL for the "View Code" button
+ * Type for React children
  */
-export type CardProps = {
-  imageSrc: string;
-  imageAlt: string;
-  cardTitle: string;
-  cardDescription: string;
-  demoLink: string;
-  codeLink: string;
+export type ReactChildrenProp = {
+  children: ReactNode;
 };
 
 /**
- * Props for the CardList component
- * @property cardList - list of Card components
+ * Props for the MobileNav component
+ * @property handleToggle  - state (isMobileNavOpen) setter function
  */
-export type CardListProps = {
-  cardList: CardProps[];
+export type MobileNavProps = {
+  handleToggle: () => void;
+};
+
+/**
+ * Props for the Card component
+ */
+export type CardProps = ChallengeData & {};
+
+/**
+ * Props for the Difficulty component
+ * @property difficulty - challenge difficulty
+ */
+export type DifficultyProps = {
+  difficulty: ChallengeDifficulty;
 };
 
 /**
@@ -46,13 +48,49 @@ export type TechnologyCardProps = {
 
 /**
  * Props for the LinkButton component
- * @property link        - link URL
- * @property description - button description
+ * @property anchorStyle      - style for the <a> element
+ * @property containerStyle   - style for flex container inside the <a> element
+ * @property link             - link URL
+ * @property ariaLabel        - (optional) aria-label text
+ * @property description      - link description
  */
 export type LinkButtonProps = {
+  anchorStyle: string;
+  containerStyle: string;
   link: string;
-  description: ReactNode;
+  ariaLabel?: string;
+  description: string;
 };
+
+/**
+ * Props for the ExternalLink component
+ * @property anchorStyle    - style for the <a> element
+ * @property containerStyle - style for flex container inside the <a> element
+ * @property link           - link URL
+ * @property description    - link description
+ * @property icon           - (optional) link icon
+ * @property goToText       - text added to the aria-label
+ */
+export type ExternalLinkProps = Pick<
+  LinkButtonProps,
+  "anchorStyle" | "containerStyle" | "link" | "ariaLabel" | "description"
+> & {
+  icon?: ReactNode;
+  goToText: string;
+};
+
+/**
+ * Props for the DownloadButton component
+ * @property anchorStyle    - style for the <a> element
+ * @property containerStyle - style for flex container inside the <a> element
+ * @property link           - link URL
+ * @property ariaLabel      - (optional) aria-label text
+ * @property description    - link description
+ */
+export type DownloadLinkButtonProps = Pick<
+  LinkButtonProps,
+  "anchorStyle" | "containerStyle" | "link" | "ariaLabel" | "description"
+>;
 
 /**
  * Props for the Technology component
@@ -62,9 +100,80 @@ export type TechnologyProps = {
   name: TechnologyName;
 };
 
+/**
+ * Props for the FooterLink component
+ * @property url  - url to be opened in a new tab
+ * @property name - link name
+ */
+export type FooterLinkProps = {
+  url: string;
+  name: FooterLinksName;
+};
+
+/* ---------------------------------------------------- */
+/* Context Provider related types                       */
+/* ---------------------------------------------------- */
+
+/**
+ * Type for the ChallengeContext
+ * @property challenges          - list of challenges state
+ * @property setChallenges       - challenges state setter
+ * @property challengesFilter    - list of filters state
+ * @property addFilter           - adds new filter to the filters state
+ * @property removeFilter        - removes filter from the filters state
+ * @property clearFilters        - clears the filters state
+ */
+export type ChallengeContextType = {
+  challenges: ChallengeData[];
+  setChallenges: Dispatch<SetStateAction<ChallengeData[]>>;
+  challengesFilter: ChallengeDifficulty[];
+  addFilter: (filterToAdd: ChallengeDifficulty) => void;
+  removeFilter: (filterToRemove: ChallengeDifficulty) => void;
+  clearFilters: () => void;
+};
+
+/**
+ * Type for the ThemeContextContext
+ * @property  isDarkTheme -  is the dark mode theme active
+ * @property  toggle      -  toggles the dark theme state
+ */
+export type ThemeContextType = {
+  isDarkTheme: boolean;
+  toggle: () => void;
+};
+
 /* ---------------------------------------------------- */
 /* Other component related types                        */
 /* ---------------------------------------------------- */
+
+/**
+ * Type for the challenge data
+ * @property imageSrc        - URL of image displayed at the top
+ * @property imageAlt        - alt text for the image
+ * @property cardTitle       - title of the card
+ * @property cardDescription - description of the card
+ * @property demoLink        - link URL for the "Live Demo" button
+ * @property codeLink        - link URL for the "View Code" button
+ * @property difficulty      - challenge difficulty
+ */
+export type ChallengeData = {
+  imageSrc: string;
+  imageAlt: string;
+  cardTitle: string;
+  cardDescription: string;
+  demoLink: string;
+  codeLink: string;
+  difficulty: ChallengeDifficulty;
+};
+
+/**
+ * Type for the challenge difficulty
+ */
+export type ChallengeDifficulty =
+  | "newbie"
+  | "junior"
+  | "intermediate"
+  | "advanced";
 
 /**
  * Union of valid technology names
@@ -119,3 +228,12 @@ export type TechnologyData = {
   category: TechnologyCategory;
   technologies: TechnologyCardProps[];
 };
+
+/**
+ * Type for the footer links
+ */
+export type FooterLinksName =
+  | "gmail"
+  | "linkedin"
+  | "git hub"
+  | "frontend mentor";
