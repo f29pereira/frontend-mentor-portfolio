@@ -8,21 +8,20 @@ import { FaFileDownload } from "@/app/utils/icons";
  * Props are defined in {@link DownloadLinkButtonProps}.
  */
 export default function DownloadLinkButton({
-  styles,
+  anchorStyle,
+  containerStyle,
   link,
   ariaLabel,
   description,
 }: DownloadLinkButtonProps) {
   return (
     <a
-      className={clsx("rounded-full cursor-pointer", styles)}
+      className={clsx("rounded-full cursor-pointer", anchorStyle)}
       href={link}
       aria-label={ariaLabel}
       download
     >
-      <div
-        className={clsx("flex justify-center items-center gap-4", "md:gap-6")}
-      >
+      <div className={clsx("flex justify-center items-center", containerStyle)}>
         <FaFileDownload
           className={clsx("text-xl", "md:text-2xl", "xl:text-3xl")}
           aria-hidden="true"
