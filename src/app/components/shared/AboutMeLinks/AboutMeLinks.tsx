@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import LinkButton from "../../ui/LinkButton/LinkButton";
-import DownloadLinkButton from "../../ui/LinkButton/DownloadLinkButton/DownloadLinkButton";
+import LinkButton from "../../ui/Link/LinkButton/LinkButton";
+import DownloadLinkButton from "../../ui/Link/LinkButton/DownloadLinkButton/DownloadLinkButton";
 
 /**
  * Renders the "Download my CV" and "Go to challenges" links
@@ -36,14 +36,16 @@ export default function AboutMeLinks() {
       )}
     >
       <DownloadLinkButton
-        styles={downloadCVStyle}
+        anchorStyle={downloadCVStyle}
+        containerStyle="gap-4 md:gap-6"
         link="cv/CV_Filipe_Pereira.pdf"
         ariaLabel="Download my CV as PDF"
         description="Download my CV"
       />
 
       <LinkButton
-        styles={challengesStyle}
+        anchorStyle={challengesStyle}
+        containerStyle="gap-4 md:gap-6"
         link="/challenges"
         ariaLabel="Go to challenges page"
         description="Go to challenges"
