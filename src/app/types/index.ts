@@ -26,6 +26,7 @@ export type CardProps = ChallengeData & {};
 
 /**
  * Props for the Difficulty component
+ * @property difficulty - challenge difficulty
  */
 export type DifficultyProps = {
   difficulty: ChallengeDifficulty;
@@ -47,29 +48,32 @@ export type TechnologyCardProps = {
 
 /**
  * Props for the LinkButton component
- * @property styling     - link styles
- * @property link        - link URL
- * @property ariaLabel   - (optional) aria-label text
- * @property description - link description
+ * @property anchorStyle      - style for the <a> element
+ * @property containerStyle   - style for flex container inside the <a> element
+ * @property link             - link URL
+ * @property ariaLabel        - (optional) aria-label text
+ * @property description      - link description
  */
 export type LinkButtonProps = {
-  styles: string;
+  anchorStyle: string;
+  containerStyle: string;
   link: string;
   ariaLabel?: string;
   description: string;
 };
 
 /**
- * Props for the ExternalLinkButton component
- * @property styles      - link styles
- * @property link        - link URL
- * @property description - link description
- * @property icon        - (optional) link icon
- * @property goToText    - text added to the aria-label
+ * Props for the ExternalLink component
+ * @property anchorStyle    - style for the <a> element
+ * @property containerStyle - style for flex container inside the <a> element
+ * @property link           - link URL
+ * @property description    - link description
+ * @property icon           - (optional) link icon
+ * @property goToText       - text added to the aria-label
  */
-export type ExternalLinkButtonProps = Pick<
+export type ExternalLinkProps = Pick<
   LinkButtonProps,
-  "styles" | "link" | "ariaLabel" | "description"
+  "anchorStyle" | "containerStyle" | "link" | "ariaLabel" | "description"
 > & {
   icon?: ReactNode;
   goToText: string;
@@ -77,14 +81,15 @@ export type ExternalLinkButtonProps = Pick<
 
 /**
  * Props for the DownloadButton component
- * @property styles      - link styles
- * @property link        - link URL
- * @property ariaLabel   - (optional) aria-label text
- * @property description - link description
+ * @property anchorStyle    - style for the <a> element
+ * @property containerStyle - style for flex container inside the <a> element
+ * @property link           - link URL
+ * @property ariaLabel      - (optional) aria-label text
+ * @property description    - link description
  */
 export type DownloadLinkButtonProps = Pick<
   LinkButtonProps,
-  "styles" | "link" | "ariaLabel" | "description"
+  "anchorStyle" | "containerStyle" | "link" | "ariaLabel" | "description"
 >;
 
 /**
