@@ -18,7 +18,7 @@ export default function DesktopNav() {
             "font-bold text-nav-link hover:text-nav-link-hover",
             "dark:text-dark-inline-link dark:hover:text-dark-inline-link-hover",
           )}
-          href={"/"}
+          href={"/aboutMe"}
         >
           About Me
         </Link>

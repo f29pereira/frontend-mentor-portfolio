@@ -138,7 +138,7 @@ export type ChallengeContextType = {
  * @property  toggle      -  toggles the dark theme state
  */
 export type ThemeContextType = {
-  isDarkTheme: boolean;
+  isDarkTheme: boolean | null;
   toggle: () => void;
 };
 

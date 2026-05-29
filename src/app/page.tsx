@@ -1,8 +1,8 @@
-import AboutMe from "./components/sections/AboutMe/AboutMe";
+import { redirect } from "next/navigation";
 
 /**
  * Renders the about me page
  */
 export default function Home() {
-  return <AboutMe />;
+  redirect("/aboutMe");
 }
