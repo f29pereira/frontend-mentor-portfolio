@@ -68,9 +68,19 @@ export const getChallengesList = (): ChallengeData[] => {
       difficulty: "junior",
     },
     {
+      imageSrc: "images/cards/result_summary.png",
+      imageAlt: "Result Summary Challenge",
+      cardTitle: "Result Summary component",
+      cardDescription:
+        "Result summary card component displaying user's test results.",
+      demoLink: "https://f29pereira.github.io/results-summary-component/",
+      codeLink: "https://github.com/f29pereira/results-summary-component",
+      difficulty: "newbie",
+    },
+    {
       imageSrc: "images/cards/order_summary.png",
       imageAlt: "Order Summary Challenge",
-      cardTitle: "Order Summary",
+      cardTitle: "Order Summary component",
       cardDescription:
         "Order summary card component for music subscription plan.",
       demoLink: "https://f29pereira.github.io/order-summary/",

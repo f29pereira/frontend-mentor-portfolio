@@ -19,7 +19,8 @@ This is a collection of coding challenges I’ve completed from [Frontend Mentor
     - [Fylo](#fylo)
     - [Bento Grid](#bento-grid)
   - [Newbie Challenges](#newbie-challenges)
-    - [Order Summary](#order-summary)
+    - [Results summary component](#result-summary-component)
+    - [Order summary component](#order-summary-component)
 - [Technologies](#technologies)
 - [Author](#author)
 
@@ -112,7 +113,17 @@ Bento-style grid layout that adapts to any screen size.
 
 Entry-level projects with simple designs that focus on HTML and CSS fundamentals.
 
-#### Order Summary
+#### Result Summary Component
+
+A result summary card component displaying user's test results.
+
+<img src="public/images/readme/result_summary.png" width="750" alt="Order summary challenge desktop layout">
+
+**Technologies used:** Next.js, React, TypeScript, HTML, CSS, Jest, React Testing Library and NVDA
+
+🔗 [Live Demo](https://f29pereira.github.io/results-summary-component/) | 📂 [Code](https://github.com/f29pereira/results-summary-component)
+
+#### Order Summary Component
 
 An order summary card component for a music subscription plan.
 
