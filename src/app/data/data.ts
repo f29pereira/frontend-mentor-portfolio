@@ -10,6 +10,15 @@ import type {
 export const getChallengesList = (): ChallengeData[] => {
   return [
     {
+      imageSrc: "images/cards/multistep_form.png",
+      imageAlt: "Multi-step form Challenge",
+      cardTitle: "Multi-step form",
+      cardDescription: "Multi-step form for a gaming subscription.",
+      demoLink: "https://f29pereira.github.io/multi-step-form/",
+      codeLink: "https://github.com/f29pereira/multi-step-form",
+      difficulty: "advanced",
+    },
+    {
       imageSrc: "images/cards/sneakers.png",
       imageAlt: "Sneakers Challenge",
       cardTitle: "Sneakers",
