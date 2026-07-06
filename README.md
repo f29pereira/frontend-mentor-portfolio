@@ -49,6 +49,8 @@ A Multi-step form for a gaming subscription.
 
 **Technologies used:** Next.js, React, Redux Toolkit, React and Redux Developer Tools, TypeScript, HTML, CSS, clsx, React Hook Form, Jest, React testing library, user-event and Playwright
 
+🔗 [Live Demo](https://f29pereira.github.io/multi-step-form/) | 📂 [Code](https://github.com/f29pereira/multi-step-form)
+
 ### Intermediate Challenges
 
 Projects with more complex designs and functionality, with some using APIs.
