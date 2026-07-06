@@ -10,6 +10,15 @@ import type {
 export const getChallengesList = (): ChallengeData[] => {
   return [
     {
+      imageSrc: "images/cards/multistep_form.png",
+      imageAlt: "Multi-step form Challenge",
+      cardTitle: "Multi-step form",
+      cardDescription: "Multi-step form for a gaming subscription.",
+      demoLink: "https://f29pereira.github.io/multi-step-form/",
+      codeLink: "https://github.com/f29pereira/multi-step-form",
+      difficulty: "advanced",
+    },
+    {
       imageSrc: "images/cards/sneakers.png",
       imageAlt: "Sneakers Challenge",
       cardTitle: "Sneakers",
@@ -165,6 +174,13 @@ export const getTechnologiesList = (): TechnologyData[] => {
           name: "React",
           description: "JavaScript library for web and native UIs",
           link: "https://react.dev/",
+        },
+        {
+          iconName: "react_hook_form",
+          name: "React Hook Form",
+          description:
+            "Helps build performant, flexible and extensible forms with easy-to-use validation",
+          link: "https://react-hook-form.com/",
         },
         {
           iconName: "clsx",

@@ -51,6 +51,7 @@
   --color-nodejs: #539e43;
   --color-react: #61dafb;
   --color-react_dev_tools: var(--default-browser-extension);
+  --color-react_hook_form: #ec5990;
   --color-react_testing_library: #e93737;
   --color-redux_toolkit: #764abc;
   --color-redux_dev_tools: var(--default-browser-extension);

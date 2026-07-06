@@ -10,6 +10,8 @@ This is a collection of coding challenges I’ve completed from [Frontend Mentor
 
 - [Overview](#overview)
 - [The Challenges](#the-challenges)
+  - [Advanced Challenges](#advanced-challenges)
+    - [Multi-step form](#multi-step-form)
   - [Intermediate Challenges](#intermediate-challenges)
     - [Sneakers](#sneakers)
     - [Shortly](#shortly)
@@ -34,6 +36,20 @@ In these challenges, I focused on:
 - Using **TypeScript** to improve reliability
 
 ## The challenges
+
+### Advanced Challenges
+
+Projects with advanced designs and functionality.
+
+##### Multi-step form
+
+A Multi-step form for a gaming subscription.
+
+<img src="public/images/readme/multistep_form.png" width="750" alt="Multi-step form challenge desktop layout">
+
+**Technologies used:** Next.js, React, Redux Toolkit, React and Redux Developer Tools, TypeScript, HTML, CSS, clsx, React Hook Form, Jest, React testing library, user-event and Playwright
+
+🔗 [Live Demo](https://f29pereira.github.io/multi-step-form/) | 📂 [Code](https://github.com/f29pereira/multi-step-form)
 
 ### Intermediate Challenges
 
