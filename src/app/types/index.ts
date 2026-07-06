@@ -196,6 +196,7 @@ export type TechnologyName =
   | "playwright"
   | "react"
   | "react_dev_tools"
+  | "react_hook_form"
   | "react_icons"
   | "react_testing_library"
   | "redux_dev_tools"

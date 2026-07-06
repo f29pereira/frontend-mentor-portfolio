@@ -176,6 +176,13 @@ export const getTechnologiesList = (): TechnologyData[] => {
           link: "https://react.dev/",
         },
         {
+          iconName: "react_hook_form",
+          name: "React Hook Form",
+          description:
+            "Helps build performant, flexible and extensible forms with easy-to-use validation",
+          link: "https://react-hook-form.com/",
+        },
+        {
           iconName: "clsx",
           name: "Clsx",
           description:

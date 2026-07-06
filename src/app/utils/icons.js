@@ -24,7 +24,7 @@ import {
 import { FiArrowUpRight, FiExternalLink, FiGlobe } from "react-icons/fi";
 import { AiOutlineApi } from "react-icons/ai";
 import { TbBrandRedux } from "react-icons/tb";
-import { SiGithubactions } from "react-icons/si";
+import { SiGithubactions, SiReacthookform } from "react-icons/si";
 import { IoLogoGithub, IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { IoLibrary, IoClose } from "react-icons/io5";
 import { MdExtension } from "react-icons/md";
@@ -50,6 +50,7 @@ export {
   IoLogoGithub /*GitHub*/,
   SiGithubactions /*GitHub actions*/,
   FaNode /*Node.js*/,
+  SiReacthookform /*React Hook Form*/,
   /*Other*/
   FiArrowUpRight /*page link*/,
   FiExternalLink /*external link*/,
