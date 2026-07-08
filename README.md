@@ -177,6 +177,8 @@ These are the technologies I used across my Frontend Mentor challenges:
 
   [React](https://react.dev/) - JavaScript library for web and native UIs
 
+  [React Hook Form](https://react-hook-form.com/) - Library that helps build performant, flexible and extensible forms with easy-to-use validation
+
   [clsx](https://www.npmjs.com/package/clsx) - Utility for constructing className strings conditionally
 
   [focus-trap-react](https://www.npmjs.com/package/focus-trap-react) - React component that traps focus
@@ -186,6 +188,8 @@ These are the technologies I used across my Frontend Mentor challenges:
   [Hero Icons](https://heroicons.com/) - SVG icons by the makers of Tailwind CSS
 
 - **State Management:**
+
+  [React Context API](https://react.dev/reference/react/createContext) - React API that allows to share state across components without prop drilling
 
   [Redux Toolkit](https://redux-toolkit.js.org/) - Manage global app state with Redux, with less boilerplate
 
