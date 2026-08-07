@@ -8,18 +8,20 @@ import type {
  * Returns the list of challenges
  */
 export const getChallengesList = (): ChallengeData[] => {
+  const prefix = "";
+
   return [
     {
-      imageSrc: "images/cards/multistep_form.png",
+      imageSrc: `${prefix}images/cards/multistep_form.png`,
       imageAlt: "Multi-step form Challenge",
       cardTitle: "Multi-step form",
       cardDescription: "Multi-step form for a gaming subscription.",
-      demoLink: "https://f29pereira.github.io/multi-step-form/",
+      demoLink: "https://multi-step-form-f29pereira.vercel.app",
       codeLink: "https://github.com/f29pereira/multi-step-form",
       difficulty: "advanced",
     },
     {
-      imageSrc: "images/cards/sneakers.png",
+      imageSrc: `${prefix}images/cards/sneakers.png`,
       imageAlt: "Sneakers Challenge",
       cardTitle: "Sneakers",
       cardDescription:
@@ -29,7 +31,7 @@ export const getChallengesList = (): ChallengeData[] => {
       difficulty: "intermediate",
     },
     {
-      imageSrc: "images/cards/shortly.png",
+      imageSrc: `${prefix}images/cards/shortly.png`,
       imageAlt: "Shortly Challenge",
       cardTitle: "Shortly",
       cardDescription: "URL shortening landing page using the Clean URI API.",
@@ -38,7 +40,7 @@ export const getChallengesList = (): ChallengeData[] => {
       difficulty: "intermediate",
     },
     {
-      imageSrc: "images/cards/weather_now.png",
+      imageSrc: `${prefix}images/cards/weather_now.png`,
       imageAlt: "Weather App challenge Challenge",
       cardTitle: "Weather Now",
       cardDescription:
@@ -48,7 +50,7 @@ export const getChallengesList = (): ChallengeData[] => {
       difficulty: "intermediate",
     },
     {
-      imageSrc: "images/cards/conference_ticket_generator.png",
+      imageSrc: `${prefix}images/cards/conference_ticket_generator.png`,
       imageAlt: "Conference Ticket Generator Challenge",
       cardTitle: "Conference Ticket Generator",
       cardDescription:
@@ -58,7 +60,7 @@ export const getChallengesList = (): ChallengeData[] => {
       difficulty: "junior",
     },
     {
-      imageSrc: "images/cards/fylo.png",
+      imageSrc: `${prefix}images/cards/fylo.png`,
       imageAlt: "Fylo Landing Page Challenge",
       cardTitle: "Fylo landing page",
       cardDescription:
@@ -68,7 +70,7 @@ export const getChallengesList = (): ChallengeData[] => {
       difficulty: "junior",
     },
     {
-      imageSrc: "images/cards/bento_grid.png",
+      imageSrc: `${prefix}images/cards/bento_grid.png`,
       imageAlt: "Bento Grid Challenge",
       cardTitle: "Bento Grid",
       cardDescription: "Responsive bento-style grid layout.",
@@ -77,7 +79,7 @@ export const getChallengesList = (): ChallengeData[] => {
       difficulty: "junior",
     },
     {
-      imageSrc: "images/cards/result_summary.png",
+      imageSrc: `${prefix}images/cards/result_summary.png`,
       imageAlt: "Result Summary Challenge",
       cardTitle: "Result Summary component",
       cardDescription:
@@ -87,7 +89,7 @@ export const getChallengesList = (): ChallengeData[] => {
       difficulty: "newbie",
     },
     {
-      imageSrc: "images/cards/order_summary.png",
+      imageSrc: `${prefix}images/cards/order_summary.png`,
       imageAlt: "Order Summary Challenge",
       cardTitle: "Order Summary component",
       cardDescription:
@@ -286,17 +288,36 @@ export const getTechnologiesList = (): TechnologyData[] => {
       technologies: [
         {
           iconName: "git_hub",
-          name: "Git Hub",
+          name: "GitHub",
           description:
             "Version control system for tracking code changes and managing project history",
           link: "https://github.com/",
         },
         {
           iconName: "git_hub_actions",
-          name: "Git Hub Actions",
+          name: "GitHub Actions",
           description:
             "CI/CD platform built into GitHub that automates workflows on every push or pull request",
           link: "https://github.com/features/actions",
+        },
+      ],
+    },
+    {
+      category: "Hosting",
+      technologies: [
+        {
+          iconName: "git_hub_pages",
+          name: "GitHub Pages",
+          description:
+            "Free hosting for static websites directly from a GitHub repository",
+          link: "https://docs.github.com/en/pages",
+        },
+        {
+          iconName: "vercel",
+          name: "Vercel",
+          description:
+            "Cloud platform to host and deploy modern websites and web applications, with full support for Next.js features like Server Actions",
+          link: "https://vercel.com/",
         },
       ],
     },

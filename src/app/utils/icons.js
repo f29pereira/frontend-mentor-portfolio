@@ -20,13 +20,14 @@ import {
   SiJest,
   SiTestinglibrary,
   SiTailwindcss,
+  SiGithubpages,
 } from "react-icons/si";
 import { FiArrowUpRight, FiExternalLink, FiGlobe } from "react-icons/fi";
 import { AiOutlineApi } from "react-icons/ai";
 import { TbBrandRedux } from "react-icons/tb";
 import { SiGithubactions, SiReacthookform } from "react-icons/si";
 import { IoLogoGithub, IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { IoLibrary, IoClose } from "react-icons/io5";
+import { IoLibrary, IoClose, IoLogoVercel } from "react-icons/io5";
 import { MdExtension } from "react-icons/md";
 import { FaFilterCircleXmark, FaSun, FaMoon } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -51,6 +52,8 @@ export {
   SiGithubactions /*GitHub actions*/,
   FaNode /*Node.js*/,
   SiReacthookform /*React Hook Form*/,
+  SiGithubpages /*GitHub Pages*/,
+  IoLogoVercel /*Vercel*/,
   /*Other*/
   FiArrowUpRight /*page link*/,
   FiExternalLink /*external link*/,
