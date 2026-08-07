@@ -186,6 +186,7 @@ export type TechnologyName =
   | "focus_trap_react"
   | "git_hub"
   | "git_hub_actions"
+  | "git_hub_pages"
   | "hero_icons"
   | "html"
   | "jest"
@@ -202,7 +203,8 @@ export type TechnologyName =
   | "redux_dev_tools"
   | "redux_toolkit"
   | "tailwind_css"
-  | "typescript";
+  | "typescript"
+  | "vercel";
 
 /**
  * Union of valid technology category names
@@ -218,6 +220,7 @@ export type TechnologyCategory =
   | "Testing Frameworks and Libraries"
   | "Accessibility"
   | "Version control and CI/CD"
+  | "Hosting"
   | "Design";
 
 /**

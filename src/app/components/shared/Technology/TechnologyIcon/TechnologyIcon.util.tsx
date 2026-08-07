@@ -16,6 +16,8 @@ import {
   MdExtension,
   FaNode,
   SiReacthookform,
+  IoLogoVercel,
+  SiGithubpages,
 } from "@/app/utils/icons";
 import Figma from "@/app/components/ui/Icons/Figma/Figma";
 import HeroIcons from "@/app/components/ui/Icons/HeroIcons/HeroIcons";
@@ -23,12 +25,13 @@ import Lighthouse from "@/app/components/ui/Icons/Lighthouse/Lighthouse";
 import NVDA from "@/app/components/ui/Icons/NVDA/NVDA";
 import Playwright from "@/app/components/ui/Icons/Playwright/Playwright";
 import ReactIcons from "@/app/components/ui/Icons/ReactIcons/ReactIcons";
+import { TechnologyName } from "@/app/types";
 
 /**
  * Gets the technology icon
  * @param techName - icon name
  */
-export const getIcon = (techName: string): ReactNode | string => {
+export const getIcon = (techName: TechnologyName): ReactNode | string => {
   switch (techName) {
     case "api":
       return <AiOutlineApi />;
@@ -38,6 +41,8 @@ export const getIcon = (techName: string): ReactNode | string => {
       return <Figma />;
     case "git_hub":
       return <IoLogoGithub />;
+    case "git_hub_pages":
+      return <SiGithubpages />;
     case "git_hub_actions":
       return <SiGithubactions />;
     case "hero_icons":
@@ -76,6 +81,8 @@ export const getIcon = (techName: string): ReactNode | string => {
     case "clsx":
     case "focus_trap_react":
       return <IoLibrary />;
+    case "vercel":
+      return <IoLogoVercel />;
     default:
       return techName;
   }

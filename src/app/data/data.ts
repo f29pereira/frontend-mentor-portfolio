@@ -288,17 +288,36 @@ export const getTechnologiesList = (): TechnologyData[] => {
       technologies: [
         {
           iconName: "git_hub",
-          name: "Git Hub",
+          name: "GitHub",
           description:
             "Version control system for tracking code changes and managing project history",
           link: "https://github.com/",
         },
         {
           iconName: "git_hub_actions",
-          name: "Git Hub Actions",
+          name: "GitHub Actions",
           description:
             "CI/CD platform built into GitHub that automates workflows on every push or pull request",
           link: "https://github.com/features/actions",
+        },
+      ],
+    },
+    {
+      category: "Hosting",
+      technologies: [
+        {
+          iconName: "git_hub_pages",
+          name: "GitHub Pages",
+          description:
+            "Free hosting for static websites directly from a GitHub repository",
+          link: "https://docs.github.com/en/pages",
+        },
+        {
+          iconName: "vercel",
+          name: "Vercel",
+          description:
+            "Cloud platform to host and deploy modern websites and web applications, with full support for Next.js features like Server Actions",
+          link: "https://vercel.com/",
         },
       ],
     },

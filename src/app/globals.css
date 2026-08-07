@@ -44,6 +44,7 @@
   --color-css: #1572b6;
   --color-focus_trap_react: var(--default-library);
   --color-git_hub: #181717;
+  --color-git_hub_pages: #181717;
   --color-git_hub_actions: #2088ff;
   --color-html: #e34f26;
   --color-jest: #99425b;
@@ -57,6 +58,7 @@
   --color-redux_dev_tools: var(--default-browser-extension);
   --color-tailwind_css: #38bdf8;
   --color-typescript: #3178c6;
+  --color-vercel: #ffffff;
 }
 
 body {
