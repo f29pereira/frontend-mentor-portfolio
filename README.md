@@ -219,6 +219,12 @@ These are the technologies I used across my Frontend Mentor challenges:
 
   [GitHub Actions](https://github.com/features/actions) - CI/CD platform built into GitHub that automates workflows on every push or pull request
 
+- **Hosting:**
+
+  [GitHub Pages](https://docs.github.com/en/pages) - free hosting for static websites directly from a GitHub repository
+
+  [Vercel](https://vercel.com/) - Cloud platform to host and deploy modern websites and web applications, with full support for Next.js features like Server Actions
+
 - **Design:**
 
   [Figma](https://www.figma.com/) - UI design and prototyping tool used to create wireframes, mockups, and design systems collaboratively
